@@ -1,0 +1,1310 @@
+{
+  "scope": "inert ZIP metadata inspection only",
+  "publisher_fields_are_not_authenticode_validation": true,
+  "binaries": [
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "python.exe",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python Console",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "python.exe",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "pythonw.exe",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python Application",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "pythonw.exe",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "python313.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "python313.dll",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "python3.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "python3.dll",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "vcruntime140.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "14.51.36247.0",
+        "fixed_product_version": "14.51.36247.0",
+        "CompanyName": "Microsoft Corporation",
+        "FileDescription": "Microsoft\u00ae C Runtime Library",
+        "FileVersion": "14.51.36247.0",
+        "InternalName": "vcruntime140.dll",
+        "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+        "OriginalFilename": "vcruntime140.dll",
+        "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+        "ProductVersion": "14.51.36247.0"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "vcruntime140_1.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "14.51.36247.0",
+        "fixed_product_version": "14.51.36247.0",
+        "CompanyName": "Microsoft Corporation",
+        "FileDescription": "Microsoft\u00ae C Runtime Library",
+        "FileVersion": "14.51.36247.0",
+        "InternalName": "vcruntime140_1.dll",
+        "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+        "OriginalFilename": "vcruntime140_1.dll",
+        "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+        "ProductVersion": "14.51.36247.0"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/pyexpat.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "pyexpat.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/select.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "select.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/unicodedata.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "unicodedata.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/winsound.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "winsound.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_asyncio.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_asyncio.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_bz2.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_bz2.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_ctypes.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_ctypes.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_decimal.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_decimal.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_elementtree.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_elementtree.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_hashlib.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_hashlib.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_lzma.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_lzma.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_multiprocessing.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_multiprocessing.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_overlapped.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_overlapped.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_queue.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_queue.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_socket.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_socket.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_sqlite3.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_sqlite3.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_ssl.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_ssl.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_tkinter.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_tkinter.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_uuid.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_uuid.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_wmi.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_wmi.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/_zoneinfo.pyd",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python Core",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python DLL",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "_zoneinfo.pyd",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/libcrypto-3.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.5.9.0",
+        "fixed_product_version": "3.5.9.0",
+        "CompanyName": "The OpenSSL Project, https://www.openssl.org/",
+        "FileDescription": "OpenSSL library",
+        "FileVersion": "3.5.9",
+        "InternalName": "libcrypto",
+        "OriginalFilename": "libcrypto",
+        "ProductName": "The OpenSSL Toolkit",
+        "ProductVersion": "3.5.9",
+        "LegalCopyright": "Copyright 1998-2026 The OpenSSL Authors. All rights reserved."
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/libffi-8.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/libssl-3.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.5.9.0",
+        "fixed_product_version": "3.5.9.0",
+        "CompanyName": "The OpenSSL Project, https://www.openssl.org/",
+        "FileDescription": "OpenSSL library",
+        "FileVersion": "3.5.9",
+        "InternalName": "libssl",
+        "OriginalFilename": "libssl",
+        "ProductName": "The OpenSSL Toolkit",
+        "ProductVersion": "3.5.9",
+        "LegalCopyright": "Copyright 1998-2026 The OpenSSL Authors. All rights reserved."
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/sqlite3.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.50.4.0",
+        "fixed_product_version": "3.50.4.0",
+        "CompanyName": "SQLite3",
+        "FileDescription": "SQLite3",
+        "FileVersion": "3.50.4.0",
+        "InternalName": "SQLite3 DLL",
+        "LegalCopyright": "Unspecified",
+        "OriginalFilename": "sqlite3.dll",
+        "ProductName": "SQLite3",
+        "ProductVersion": "3.50.4.0"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/tcl86t.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "8.6.2.15",
+        "fixed_product_version": "8.6.2.15",
+        "FileDescription": "Tcl DLL",
+        "OriginalFilename": "tcl86.dll",
+        "FileVersion": "8.6.15",
+        "LegalCopyright": "Copyright \u00a9 1987-2022 Regents of the University of California and other parties",
+        "ProductName": "Tcl 8.6 for Windows",
+        "ProductVersion": "8.6.15"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/tk86t.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "8.6.2.15",
+        "fixed_product_version": "8.6.2.15",
+        "FileDescription": "Tk DLL",
+        "OriginalFilename": "tk86.dll",
+        "FileVersion": "8.6.15",
+        "LegalCopyright": "Copyright \u00a9 1987-2022 Regents of the University of California and other parties",
+        "ProductName": "Tk 8.6 for Windows",
+        "ProductVersion": "8.6.15"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "DLLs/zlib1.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "1.3.1.0",
+        "fixed_product_version": "1.3.1.0",
+        "FileDescription": "zlib data compression library",
+        "FileVersion": "1.3.1",
+        "InternalName": "zlib1.dll",
+        "LegalCopyright": "(C) 1995-2022 Jean-loup Gailly & Mark Adler",
+        "OriginalFilename": "zlib1.dll",
+        "ProductName": "zlib",
+        "ProductVersion": "1.3.1",
+        "Comments": "For more information visit http://www.zlib.net/"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "Lib/venv/scripts/nt/venvlauncher.exe",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python Launcher",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "py.exe",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "python-3.13.16-amd64.zip",
+      "member": "Lib/venv/scripts/nt/venvwlauncher.exe",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.16150.1013",
+        "fixed_product_version": "3.13.16150.1013",
+        "CompanyName": "Python Software Foundation",
+        "FileDescription": "Python",
+        "FileVersion": "3.13.16",
+        "InternalName": "Python Launcher",
+        "LegalCopyright": "Copyright \u00a9 2001-2024 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+        "OriginalFilename": "py.exe",
+        "ProductName": "Python",
+        "ProductVersion": "3.13.16"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/_C.cp313-win_amd64.pyd",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/bin/protoc.exe",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "3.13.0.0",
+        "fixed_product_version": "3.13.0.0",
+        "FileDescription": "Compiled with MSVC 19.42.34444.0",
+        "ProductVersion": "3.13.0.0",
+        "FileVersion": "3.13.0.0",
+        "InternalName": "protobuf",
+        "ProductName": "Protocol Buffers - Google's Data Interchange Format",
+        "CompanyName": "Google Inc.",
+        "LegalCopyright": "Copyright 2008 Google Inc.  All rights reserved.",
+        "Licence": "BSD",
+        "Info": "https://developers.google.com/protocol-buffers/"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/c10.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/c10_cuda.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/caffe2_nvrtc.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cublas64_13.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.1300",
+        "fixed_product_version": "10.0.10011.16384",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUDA BLAS Library, Version 13.0.0 ",
+        "FileVersion": "6,14,11,1300",
+        "InternalName": "CUBLAS",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2010 - 2025",
+        "OriginalFilename": "CUBLAS.DLL",
+        "ProductName": "NVIDIA CUDA BLAS Library",
+        "ProductVersion": "6,14,11,1300"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cublasLt64_13.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.1300",
+        "fixed_product_version": "10.0.10011.16384",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUDA BLAS Light Library, Version 13.0.0 ",
+        "FileVersion": "6,14,11,1300",
+        "InternalName": "CUBLASLT",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2010 - 2025",
+        "OriginalFilename": "CUBLASLT.DLL",
+        "ProductName": "NVIDIA CUDA BLAS Library",
+        "ProductVersion": "6,14,11,1300"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cudart64_13.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.13000",
+        "fixed_product_version": "10.0.10011.16384",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUDA Runtime, Version 13.0.48 ",
+        "FileVersion": "6,14,11,13000",
+        "InternalName": "CUDART",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 1993 - 2025",
+        "OriginalFilename": "CUDART64_130_48.DLL",
+        "ProductName": "NVIDIA CUDA 13.0.48 Runtime",
+        "ProductVersion": "6,14,11,13000"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cudnn64_9.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "9.20.0.48",
+        "fixed_product_version": "9.20.0.48",
+        "CompanyName": "Windows (R) Win 7 DDK provider",
+        "FileDescription": "NVIDIA cuDNN Library",
+        "FileVersion": "9.20.0.48",
+        "InternalName": "cudnn",
+        "LegalCopyright": "Copyright (c) 2014-2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+        "OriginalFilename": "cudnn64_9.dll",
+        "ProductName": "NVIDIA cuDNN Library",
+        "ProductVersion": "9.20.0.48"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cudnn_adv64_9.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "9.20.0.48",
+        "fixed_product_version": "9.20.0.48",
+        "CompanyName": "Windows (R) Win 7 DDK provider",
+        "FileDescription": "NVIDIA cuDNN Adv Library",
+        "FileVersion": "9.20.0.48",
+        "InternalName": "cudnn_adv",
+        "LegalCopyright": "Copyright (c) 2014-2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+        "OriginalFilename": "cudnn_adv64_9.dll",
+        "ProductName": "NVIDIA cuDNN Adv Library",
+        "ProductVersion": "9.20.0.48"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cudnn_cnn64_9.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "9.20.0.48",
+        "fixed_product_version": "9.20.0.48",
+        "CompanyName": "Windows (R) Win 7 DDK provider",
+        "FileDescription": "NVIDIA cuDNN CNN Library",
+        "FileVersion": "9.20.0.48",
+        "InternalName": "cudnn_cnn",
+        "LegalCopyright": "Copyright (c) 2014-2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+        "OriginalFilename": "cudnn_cnn64_9.dll",
+        "ProductName": "NVIDIA cuDNN CNN Library",
+        "ProductVersion": "9.20.0.48"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cudnn_engines_precompiled64_9.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "9.20.0.48",
+        "fixed_product_version": "9.20.0.48",
+        "CompanyName": "Windows (R) Win 7 DDK provider",
+        "FileDescription": "NVIDIA cuDNN Precompiled Engines Library",
+        "FileVersion": "9.20.0.48",
+        "InternalName": "cudnn_engines_precompiled",
+        "LegalCopyright": "Copyright (c) 2014-2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+        "OriginalFilename": "cudnn_engines_precompiled64_9.dll",
+        "ProductName": "NVIDIA cuDNN Precompiled Engines Library",
+        "ProductVersion": "9.20.0.48"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cudnn_engines_runtime_compiled64_9.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "9.20.0.48",
+        "fixed_product_version": "9.20.0.48",
+        "CompanyName": "Windows (R) Win 7 DDK provider",
+        "FileDescription": "NVIDIA cuDNN ENGINES_RUNTIME_COMPILED Library",
+        "FileVersion": "9.20.0.48",
+        "InternalName": "cudnn_engines_runtime_compiled",
+        "LegalCopyright": "Copyright (c) 2014-2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+        "OriginalFilename": "cudnn_engines_runtime_compiled64_9.dll",
+        "ProductName": "NVIDIA cuDNN ENGINES_RUNTIME_COMPILED Library",
+        "ProductVersion": "9.20.0.48"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cudnn_graph64_9.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cudnn_heuristic64_9.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cudnn_ops64_9.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "9.20.0.48",
+        "fixed_product_version": "9.20.0.48",
+        "CompanyName": "Windows (R) Win 7 DDK provider",
+        "FileDescription": "NVIDIA cuDNN Ops Library",
+        "FileVersion": "9.20.0.48",
+        "InternalName": "cudnn_ops",
+        "LegalCopyright": "Copyright (c) 2014-2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+        "OriginalFilename": "cudnn_ops64_9.dll",
+        "ProductName": "NVIDIA cuDNN Ops Library",
+        "ProductVersion": "9.20.0.48"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cufft64_12.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.1200",
+        "fixed_product_version": "10.0.10011.16384",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUDA FFT Library, Version 12.0.0.15 ",
+        "FileVersion": "6,14,11,1200",
+        "InternalName": "CUFFT",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2013 - 2021",
+        "OriginalFilename": "CUFFT.DLL",
+        "ProductName": "NVIDIA CUDA FFT Library",
+        "ProductVersion": "6,14,11,1200"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cufftw64_12.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.1200",
+        "fixed_product_version": "10.0.10011.16384",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUDA FFTW Library, Version 12.0.0.15 ",
+        "FileVersion": "6,14,11,1200",
+        "InternalName": "CUFFTW",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2013 - 2021",
+        "OriginalFilename": "CUFFTW.DLL",
+        "ProductName": "NVIDIA CUDA FFTW Library",
+        "ProductVersion": "6,14,11,1200"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cupti64_2025.3.0.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "2025.3.0.0",
+        "fixed_product_version": "2025.3.0.0",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUPTI Library",
+        "FileVersion": "2025.3.0.0",
+        "InternalName": "cupti",
+        "LegalCopyright": "(C) 2025 NVIDIA Corporation. All rights reserved.",
+        "ProductName": "NVIDIA CUPTI Library",
+        "ProductVersion": "2025.3.0.0 Build (0)"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/curand64_10.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.1040",
+        "fixed_product_version": "10.0.10011.16384",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUDA RAND Library, Version 10.4.0.35 ",
+        "FileVersion": "6,14,11,1040",
+        "InternalName": "CURAND",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2010 - 2021",
+        "OriginalFilename": "CURAND.DLL",
+        "ProductName": "NVIDIA CUDA RAND Library",
+        "ProductVersion": "6,14,11,1040"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cusolver64_12.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.1203",
+        "fixed_product_version": "10.0.10011.16384",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUSOLVER Library, Version 12.0.3.29 ",
+        "FileVersion": "6,14,11,1203",
+        "InternalName": "CUSOLVER",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2014 - 2021",
+        "OriginalFilename": "CUSOLVER.DLL",
+        "ProductName": "NVIDIA CUDA CUSOLVER Library",
+        "ProductVersion": "6,14,11,1203"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cusolverMg64_12.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.1203",
+        "fixed_product_version": "10.0.10011.16384",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUSOLVERMG Library, Version 12.0.3.29 ",
+        "FileVersion": "6,14,11,1203",
+        "InternalName": "CUSOLVERMG",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2014 - 2021",
+        "OriginalFilename": "CUSOLVERMG.DLL",
+        "ProductName": "NVIDIA CUDA CUSOLVERMG Library",
+        "ProductVersion": "6,14,11,1203"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/cusparse64_12.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.1262",
+        "fixed_product_version": "10.0.10011.16384",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA CUDA SPARSE BLAS Library, Version 12.6.2.49 ",
+        "FileVersion": "6,14,11,1262",
+        "InternalName": "CUSPARSE",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2010 - 2023",
+        "OriginalFilename": "CUSPARSE.DLL",
+        "ProductName": "NVIDIA CUDA SPARSE BLAS Library",
+        "ProductVersion": "6,14,11,1262"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/libiomp5md.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "5.0.2026.213",
+        "fixed_product_version": "5.0.2026.213",
+        "FileDescription": "Intel(R) OpenMP* Runtime Library",
+        "LegalCopyright": "Copyright (C) 1997, Intel Corporation. All rights reserved.",
+        "CompanyName": "Intel Corporation",
+        "ProductName": "Intel(R) OpenMP* Runtime Library",
+        "ProductVersion": "5.0",
+        "FileVersion": "20260213",
+        "InternalName": "libiomp5md.dll",
+        "OriginalFilename": "libiomp5md.dll",
+        "Comments": "Intel(R) OpenMP* Performance Library version 5.0.20260213 for Intel(R) 64 architecture built on 2026-02-13 23-01-33 UTC."
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/libiompstubs5md.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "5.0.2026.213",
+        "fixed_product_version": "5.0.2026.213",
+        "FileDescription": "Intel(R) OpenMP* Runtime Library",
+        "LegalCopyright": "Copyright (C) 1997, Intel Corporation. All rights reserved.",
+        "CompanyName": "Intel Corporation",
+        "ProductName": "Intel(R) OpenMP* Runtime Library",
+        "ProductVersion": "5.0",
+        "FileVersion": "20260213",
+        "InternalName": "libiompstubs5md.dll",
+        "OriginalFilename": "libiompstubs5md.dll",
+        "Comments": "Intel(R) OpenMP* Stub Library version 5.0.20260213 for Intel(R) 64 architecture built on 2026-02-13 23-25-38 UTC."
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/nvJitLink_130_0.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.9000",
+        "fixed_product_version": "6.14.11.9000",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA NVJITLINK Library, Version 13.0.39 ",
+        "FileVersion": "6.14.11.9000",
+        "InternalName": "NVJITLINK",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2005 - 2025 ",
+        "OriginalFilename": "nvJitLink_130_0.dll",
+        "ProductName": "NVIDIA CUDA 13.0.39 NVJITLINK Library",
+        "ProductVersion": "6.14.11.9000"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/nvToolsExt64_1.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/nvperf_host.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "2025.4.0.25197",
+        "fixed_product_version": "2025.4.0.0",
+        "CompanyName": "NVIDIA Corporation",
+        "FileVersion": "2025.4.0.25197",
+        "InternalName": "nvperf_host",
+        "LegalCopyright": "Copyright 2018-2025 NVIDIA Corporation.",
+        "OriginalFilename": "nvperf_host",
+        "ProductName": "Nsight Perf SDK",
+        "ProductVersion": "2025.4.0",
+        "Comments": "2025.4 built on dvssc-w10-vb153"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/nvrtc-builtins64_130.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/nvrtc64_130_0.alt.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.9000",
+        "fixed_product_version": "6.14.11.9000",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA NVRTC Library, Version 13.0.48 ",
+        "FileVersion": "6.14.11.9000",
+        "InternalName": "NVRTC",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2005 - 2025 ",
+        "OriginalFilename": "nvrtc64_130_0.alt.dll",
+        "ProductName": "NVIDIA CUDA 13.0.48 NVRTC Library",
+        "ProductVersion": "6.14.11.9000"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/nvrtc64_130_0.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "6.14.11.9000",
+        "fixed_product_version": "6.14.11.9000",
+        "CompanyName": "NVIDIA Corporation",
+        "FileDescription": "NVIDIA NVRTC Library, Version 13.0.48 ",
+        "FileVersion": "6.14.11.9000",
+        "InternalName": "NVRTC",
+        "LegalCopyright": "Copyright \u00a9 NVIDIA Corporation 2005 - 2025 ",
+        "OriginalFilename": "nvrtc64_130_0.dll",
+        "ProductName": "NVIDIA CUDA 13.0.48 NVRTC Library",
+        "ProductVersion": "6.14.11.9000"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/shm.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/torch.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/torch_cpu.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/torch_cuda.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/torch_global_deps.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/torch_python.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/uv.dll",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    },
+    {
+      "artifact": "torch-2.12.1+cu130-cp313-cp313-win_amd64.whl",
+      "member": "torch/lib/zlibwapi.dll",
+      "machine": "0x8664",
+      "version": {
+        "fixed_file_version": "1.2.3.0",
+        "fixed_product_version": "1.2.3.0",
+        "FileDescription": "zlib data compression library",
+        "FileVersion": "1.2.3.0",
+        "InternalName": "zlib",
+        "OriginalFilename": "zlib.dll",
+        "ProductName": "ZLib.DLL",
+        "Comments": "DLL support by Alessandro Iacopetti & Gilles Vollant",
+        "LegalCopyright": "(C) 1995-2003 Jean-loup Gailly & Mark Adler"
+      },
+      "status": "self_reported_version_resource"
+    },
+    {
+      "artifact": "markupsafe-3.0.4-cp313-cp313-win_amd64.whl",
+      "member": "markupsafe/_speedups.cp313-win_amd64.pyd",
+      "machine": "0x8664",
+      "version": {},
+      "status": "no_version_resource"
+    }
+  ],
+  "static_source_observations": [
+    {
+      "member": "torch/__init__.py",
+      "line": 168,
+      "context": [
+        "if sys.platform == \"win32\":",
+        "",
+        "    def _load_dll_libraries() -> None:",
+        "        import sysconfig",
+        "",
+        "        from torch.version import cuda as cuda_version"
+      ]
+    },
+    {
+      "member": "torch/__init__.py",
+      "line": 217,
+      "context": [
+        "",
+        "        if cuda_version and builtins.all(",
+        "            not glob.glob(os.path.join(p, \"cudart64*.dll\")) for p in dll_paths",
+        "        ):",
+        "            cuda_version_1 = cuda_version.replace(\".\", \"_\")",
+        "            cuda_path_var = \"CUDA_PATH_V\" + cuda_version_1"
+      ]
+    },
+    {
+      "member": "torch/__init__.py",
+      "line": 236,
+      "context": [
+        "        prev_error_mode = kernel32.SetErrorMode(0x0001)",
+        "",
+        "        kernel32.LoadLibraryW.restype = ctypes.c_void_p",
+        "        if with_load_library_flags:",
+        "            kernel32.LoadLibraryExW.restype = ctypes.c_void_p",
+        ""
+      ]
+    },
+    {
+      "member": "torch/__init__.py",
+      "line": 238,
+      "context": [
+        "        kernel32.LoadLibraryW.restype = ctypes.c_void_p",
+        "        if with_load_library_flags:",
+        "            kernel32.LoadLibraryExW.restype = ctypes.c_void_p",
+        "",
+        "        for dll_path in dll_paths:",
+        "            os.add_dll_directory(dll_path)"
+      ]
+    },
+    {
+      "member": "torch/__init__.py",
+      "line": 258,
+      "context": [
+        "            )",
+        "",
+        "        dlls = glob.glob(os.path.join(th_dll_path, \"*.dll\"))",
+        "        path_patched = False",
+        "        for dll in dlls:",
+        "            is_loaded = False"
+      ]
+    },
+    {
+      "member": "torch/__init__.py",
+      "line": 263,
+      "context": [
+        "            is_loaded = False",
+        "            if with_load_library_flags:",
+        "                res = kernel32.LoadLibraryExW(dll, None, 0x00001100)",
+        "                last_error = ctypes.get_last_error()",
+        "                if res is None and last_error != 126:",
+        "                    err = ctypes.WinError(last_error)"
+      ]
+    },
+    {
+      "member": "torch/__init__.py",
+      "line": 277,
+      "context": [
+        "                    os.environ[\"PATH\"] = \";\".join(dll_paths + [os.environ[\"PATH\"]])",
+        "                    path_patched = True",
+        "                res = kernel32.LoadLibraryW(dll)",
+        "                if res is None:",
+        "                    err = ctypes.WinError(ctypes.get_last_error())",
+        "                    err.strerror += ("
+      ]
+    },
+    {
+      "member": "torch/__init__.py",
+      "line": 298,
+      "context": [
+        "    from torch.version import cuda as cuda_version",
+        "",
+        "    nvidia_lib_paths = glob.glob(",
+        "        os.path.join(path, \"nvidia\", lib_folder, \"lib\", lib_name)",
+        "    )",
+        "    if cuda_version is not None:"
+      ]
+    },
+    {
+      "member": "torch/__init__.py",
+      "line": 303,
+      "context": [
+        "    if cuda_version is not None:",
+        "        maj_cuda_version = cuda_version.split(\".\")[0]",
+        "        nvidia_lib_paths += glob.glob(",
+        "            os.path.join(path, \"nvidia\", f\"cu{maj_cuda_version}\", \"lib\", lib_name)",
+        "        )",
+        "    lib_paths = glob.glob(os.path.join(path, lib_folder, \"lib\", lib_name))"
+      ]
+    },
+    {
+      "member": "torch/__init__.py",
+      "line": 306,
+      "context": [
+        "            os.path.join(path, \"nvidia\", f\"cu{maj_cuda_version}\", \"lib\", lib_name)",
+        "        )",
+        "    lib_paths = glob.glob(os.path.join(path, lib_folder, \"lib\", lib_name))",
+        "",
+        "    return nvidia_lib_paths + lib_paths",
+        ""
+      ]
+    },
+    {
+      "member": "torch/version.py",
+      "text": "from typing import Optional\r\n\r\n__all__ = ['__version__', 'debug', 'cuda', 'git_version', 'hip', 'rocm', 'xpu']\r\n__version__ = '2.12.1+cu130'\r\ndebug = False\r\ncuda: Optional[str] = '13.0'\r\ngit_version = '7269437d655783a26cba32aa88195b741ff496aa'\r\nhip: Optional[str] = None\r\nrocm: Optional[str] = None\r\nxpu: Optional[str] = None\r\n"
+    }
+  ]
+}

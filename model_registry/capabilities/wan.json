@@ -1,0 +1,84 @@
+{
+  "id": "wan21-t2v-13b",
+  "manifest_id": "wan-2-1-t2v-1-3b",
+  "name": "Wan 2.1 \u00b7 Text to Video",
+  "repository": "Wan-AI/Wan2.1-T2V-1.3B",
+  "license_source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/main/LICENSE.txt",
+  "adapter": "wan-native-v1",
+  "workspaces": [
+    "text-to-video"
+  ],
+  "fps": 16,
+  "frame_multiple": 4,
+  "frame_offset": 1,
+  "durations": [
+    {
+      "seconds": 1,
+      "frames": 17
+    },
+    {
+      "seconds": 2,
+      "frames": 33
+    },
+    {
+      "seconds": 4,
+      "frames": 65
+    },
+    {
+      "seconds": 6,
+      "frames": 97
+    },
+    {
+      "seconds": 8,
+      "frames": 129
+    }
+  ],
+  "resolutions": [
+    {
+      "id": "preview",
+      "width": 320,
+      "height": 192,
+      "aspect": "5:3"
+    },
+    {
+      "id": "landscape",
+      "width": 512,
+      "height": 288,
+      "aspect": "16:9"
+    },
+    {
+      "id": "portrait",
+      "width": 288,
+      "height": 512,
+      "aspect": "9:16"
+    },
+    {
+      "id": "square",
+      "width": 384,
+      "height": 384,
+      "aspect": "1:1"
+    },
+    {
+      "id": "classic",
+      "width": 512,
+      "height": 384,
+      "aspect": "4:3"
+    }
+  ],
+  "qualities": {
+    "Fast": 8,
+    "Balanced": 16,
+    "High": 24
+  },
+  "default_resolution": "preview",
+  "default_duration": 1,
+  "evidence": [
+    "Validated: preview resolution, 17 frames, Fast, CFG 6, shift 8, uni_pc/simple, 16 fps.",
+    "Other bounded combinations are experimental, not measured hardware guarantees. Camera settings add prompt guidance only."
+  ],
+  "required_assets": [
+    "diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors",
+    "text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+    "vae/wan_2.1_vae.safetensors"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "profile_id": "wan-windows-candidate",
+  "status": "REVIEWED_DESIGN_CONDITIONAL",
+  "revision": "b0b743566f65daafc423b4fea8a2fbda94b3384a",
+  "tree": "8696d307caa30c871887b99d8059bcce6ed7bf51",
+  "inventory_digest": "7347c6095e3bca33ff0a1ff8491252f7b590cd94b3a234d1e7a71421165dae90",
+  "official_repository": "https://github.com/Comfy-Org/ComfyUI",
+  "acquisition_url": "https://github.com/Comfy-Org/ComfyUI/archive/b0b743566f65daafc423b4fea8a2fbda94b3384a.zip",
+  "mechanism_source": "https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives",
+  "file_count": 1248,
+  "expanded_file_bytes": 48552928,
+  "archive_size_bytes": null,
+  "publisher_archive_sha256": null,
+  "commit_signature_verified": false,
+  "archive_acquired": false,
+  "trust_acceptance_recorded": false,
+  "activation_authorized": false,
+  "verification_sequence": [
+    "Future separately approved acquisition: allowlist HTTPS github.com and codeload.github.com, exact full commit ZIP path, bounded transfer; no branch/tag fallback.",
+    "Quarantine archive and record observed length/SHA256; do not call this a publisher hash. Explicitly approve those receipt bytes before using the existing local extractor.",
+    "Validate frozen inventory digest and reconstruct Git tree; match exact approved revision and tree, ordinary file modes and count.",
+    "Apply existing narrow source ZIP policy, exact membership, size/ratio limits, no links/special files, exclusive Director-owned staging.",
+    "Compare each streamed file size and Git blob hash; optional SHA256 must match where independently supplied. Reject changed/missing/extra files.",
+    "Retain verification receipt and freshly reviewed consent; structural staging does not activate or execute source."
+  ],
+  "unresolved_trust_assumptions": [
+    "Unsigned Git commit: official GitHub/TLS origin and previously reviewed inventory are trust anchors, not a publisher signature.",
+    "Git SHA1 object identity is not an archive SHA256 or audit of code safety; no independent signed content attestation exists in the reviewed evidence.",
+    "GitHub ZIP compression can change. Content comparison is required, not URL/filename trust; no hash comparison may be skipped.",
+    "No source trust acceptance or installation approval has been recorded; existing source_provenance_policy blocker remains active."
+  ]
+}

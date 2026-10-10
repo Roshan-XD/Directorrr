@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "mock-gpu-video",
+  "name": "MOCK GPU Video Example",
+  "description": "Fictional GPU example for testing multiple vendors. Does not claim real ComfyUI vendor support. Cannot generate video.",
+  "is_mock": true,
+  "tasks": ["text-to-video", "image-to-video"],
+  "runtime": "comfyui",
+  "license": "MOCK - no model weights or real model license",
+  "huggingface_repo_id": null,
+  "requirements": {
+    "min_ram_gb": 16,
+    "min_free_storage_gb": 30,
+    "gpu_required": true,
+    "supported_gpu_vendors": ["nvidia", "amd", "intel"],
+    "min_vram_gb": 8
+  }
+}

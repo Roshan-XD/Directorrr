@@ -1,0 +1,509 @@
+{
+  "schema_version": 1,
+  "family_id": "minimax-h3-official-t2va",
+  "repository": "MiniMaxAI/MiniMax-H3",
+  "revision": "42ed227ee7df40d41602854ae760620d6eb651fe",
+  "workflow": "t2va",
+  "runtime": "diffusers-modular",
+  "runtime_version": "0.41.0",
+  "status": "review_only",
+  "execution_validated": false,
+  "files": [
+    {
+      "filename": "LICENSE",
+      "expected_size_bytes": 17604,
+      "sha256": null,
+      "git_blob_sha1": "c389b45855337ccec8ddeb389f4fe902abcd0b19",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/LICENSE",
+      "destination": "LICENSE"
+    },
+    {
+      "filename": "audio_scheduler/scheduler_config.json",
+      "expected_size_bytes": 96,
+      "sha256": null,
+      "git_blob_sha1": "28a3d4ed602d925031c7e5d6eeb07df8958ff0f1",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/audio_scheduler/scheduler_config.json",
+      "destination": "audio_scheduler/scheduler_config.json"
+    },
+    {
+      "filename": "audio_vae/config.json",
+      "expected_size_bytes": 2271,
+      "sha256": null,
+      "git_blob_sha1": "15df6fe0b288b260dca0f2aebf1cd81334d77e96",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/audio_vae/config.json",
+      "destination": "audio_vae/config.json"
+    },
+    {
+      "filename": "audio_vae/diffusion_pytorch_model.safetensors",
+      "expected_size_bytes": 605429340,
+      "sha256": "52c59e67ba8de5477c81bfbced0327aabf500f1bfdeefd5ee754529241cb26cb",
+      "git_blob_sha1": "4a381c6f4b9a67db97c25d250f9d00942d17a49e",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/audio_vae/diffusion_pytorch_model.safetensors",
+      "destination": "audio_vae/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "filename": "modular_model_index.json",
+      "expected_size_bytes": 2935,
+      "sha256": null,
+      "git_blob_sha1": "5b69f1e801bd0a7e9733c48704c732339f2002fe",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/modular_model_index.json",
+      "destination": "modular_model_index.json"
+    },
+    {
+      "filename": "processor/chat_template.json",
+      "expected_size_bytes": 5499,
+      "sha256": null,
+      "git_blob_sha1": "1081bacf1af7c7c6de4a585ce02cd0fd34e382da",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/processor/chat_template.json",
+      "destination": "processor/chat_template.json"
+    },
+    {
+      "filename": "processor/merges.txt",
+      "expected_size_bytes": 1671839,
+      "sha256": null,
+      "git_blob_sha1": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/processor/merges.txt",
+      "destination": "processor/merges.txt"
+    },
+    {
+      "filename": "processor/preprocessor_config.json",
+      "expected_size_bytes": 390,
+      "sha256": null,
+      "git_blob_sha1": "2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/processor/preprocessor_config.json",
+      "destination": "processor/preprocessor_config.json"
+    },
+    {
+      "filename": "processor/tokenizer.json",
+      "expected_size_bytes": 7032403,
+      "sha256": null,
+      "git_blob_sha1": "c6cc1014128b19d1fc46b1d30a23e3b1d35db421",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/processor/tokenizer.json",
+      "destination": "processor/tokenizer.json"
+    },
+    {
+      "filename": "processor/tokenizer_config.json",
+      "expected_size_bytes": 11003,
+      "sha256": null,
+      "git_blob_sha1": "204d76f78dac6dedc820418c30bf01145de78a21",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/processor/tokenizer_config.json",
+      "destination": "processor/tokenizer_config.json"
+    },
+    {
+      "filename": "processor/video_preprocessor_config.json",
+      "expected_size_bytes": 385,
+      "sha256": null,
+      "git_blob_sha1": "3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/processor/video_preprocessor_config.json",
+      "destination": "processor/video_preprocessor_config.json"
+    },
+    {
+      "filename": "processor/vocab.json",
+      "expected_size_bytes": 2776833,
+      "sha256": null,
+      "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/processor/vocab.json",
+      "destination": "processor/vocab.json"
+    },
+    {
+      "filename": "scheduler/scheduler_config.json",
+      "expected_size_bytes": 97,
+      "sha256": null,
+      "git_blob_sha1": "1d44f95b955a648ad4fab455e4fe11053888c30b",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/scheduler/scheduler_config.json",
+      "destination": "scheduler/scheduler_config.json"
+    },
+    {
+      "filename": "text_encoder/config.json",
+      "expected_size_bytes": 1474,
+      "sha256": null,
+      "git_blob_sha1": "29e925092dee9f14278c53e7e7d876cea8a997bc",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/config.json",
+      "destination": "text_encoder/config.json"
+    },
+    {
+      "filename": "text_encoder/model-00001-of-00014.safetensors",
+      "expected_size_bytes": 4932328944,
+      "sha256": "6b9dfbc930e505402ae9d7e5091a9d7d656cda5f34614f01cfe70bfb0cca27cb",
+      "git_blob_sha1": "614247ef75d01ea40af9ef31e07103221340214d",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00001-of-00014.safetensors",
+      "destination": "text_encoder/model-00001-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00002-of-00014.safetensors",
+      "expected_size_bytes": 4875990528,
+      "sha256": "d8bb44b4ff303fe76fe9e894022fb3dc71b15a2e716592790fe0e3c3e60478fa",
+      "git_blob_sha1": "0ee7c24d1c85e72bc46fd07821a1cfb4af8efd76",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00002-of-00014.safetensors",
+      "destination": "text_encoder/model-00002-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00003-of-00014.safetensors",
+      "expected_size_bytes": 4875990552,
+      "sha256": "54f22e8b3168f8dc962fac0d313607ebf52a12b433d4cf3098a0d82d9f042940",
+      "git_blob_sha1": "cabcc450fe74db21934f8d99d1bc103942f721ba",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00003-of-00014.safetensors",
+      "destination": "text_encoder/model-00003-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00004-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "ad09c74d3c13ee29b5d0d84548fd8a3424a651564eaccd519946c296e59c557f",
+      "git_blob_sha1": "da3ca77f0ee7d9bdbe0696750c094f0dc6ad3c68",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00004-of-00014.safetensors",
+      "destination": "text_encoder/model-00004-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00005-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "fc993c8a0e2a5b0570f383e1a95dc3a1281d1b224b6f3ee908f4827941e1dfc2",
+      "git_blob_sha1": "abb15edfb6d8c352e87914ce6a0d96a98e927e04",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00005-of-00014.safetensors",
+      "destination": "text_encoder/model-00005-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00006-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "82f05620d1f718a90c362b221d6a184ff1a0f53301d706882d3df49695fa1974",
+      "git_blob_sha1": "66ace514a9c58011ac2bd4c796c21654b49443b2",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00006-of-00014.safetensors",
+      "destination": "text_encoder/model-00006-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00007-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "fb91da8cb01ff4de3eef0eab1c3e769a734b3a1aafc61734068638a0d6c86934",
+      "git_blob_sha1": "71e871eb7cda8e711788e283e0fb512998a952be",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00007-of-00014.safetensors",
+      "destination": "text_encoder/model-00007-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00008-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "431ca56535c8781944ce3801f5eb61c45531e853ecc5846d936ebaf4761b764f",
+      "git_blob_sha1": "bf1d7c575e6d7cb1117cb8fe06c102193ced09a8",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00008-of-00014.safetensors",
+      "destination": "text_encoder/model-00008-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00009-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "3825e3f4302f4d2f7d76aa7430d2ce0864fde6b9e540a5806bf0d8e38e4d9f47",
+      "git_blob_sha1": "9dfb35899c209de09e18aa4bf8346efed8269d76",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00009-of-00014.safetensors",
+      "destination": "text_encoder/model-00009-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00010-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "aded5a4d1d5e22dbd8b6f79266b6eb88c840411b09527c53917a1419ace22e2f",
+      "git_blob_sha1": "4d94038272e1f5c0368639babad1f7b595a3690b",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00010-of-00014.safetensors",
+      "destination": "text_encoder/model-00010-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00011-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "3820ffe8d8d6477f6fe8d614ef3c87abb264ee39accebf43a1507b970d80946f",
+      "git_blob_sha1": "826ba879b38cc6566b5aea1c3c04741a3087ba20",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00011-of-00014.safetensors",
+      "destination": "text_encoder/model-00011-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00012-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "05ad2d08ce71963121c9b03f1d9ec5d7641052f4b23c6c12b80d71065eb8e98e",
+      "git_blob_sha1": "c19df94cbd35798336f17365b1115200f1eec91f",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00012-of-00014.safetensors",
+      "destination": "text_encoder/model-00012-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00013-of-00014.safetensors",
+      "expected_size_bytes": 4875990584,
+      "sha256": "b64f2289871261fdd1abbd3b78bcd66011b341de3dc8eeb2ed1a473ee7c8d95c",
+      "git_blob_sha1": "39fab9be2b33a5527cbb5131e13c387544a695a9",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00013-of-00014.safetensors",
+      "destination": "text_encoder/model-00013-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model-00014-of-00014.safetensors",
+      "expected_size_bytes": 3270697008,
+      "sha256": "e45b6c9998c77ee5a6577f9f47bc76416c1d4d387169e50c4c9d3134ea51b13b",
+      "git_blob_sha1": "055162e6edd9914d2652ccf99f2371c000b613fe",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model-00014-of-00014.safetensors",
+      "destination": "text_encoder/model-00014-of-00014.safetensors"
+    },
+    {
+      "filename": "text_encoder/model.safetensors.index.json",
+      "expected_size_bytes": 97831,
+      "sha256": null,
+      "git_blob_sha1": "b7f68f12031a25c81d72d46a284fe9e1daa448b8",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/text_encoder/model.safetensors.index.json",
+      "destination": "text_encoder/model.safetensors.index.json"
+    },
+    {
+      "filename": "tokenizer/merges.txt",
+      "expected_size_bytes": 1671839,
+      "sha256": null,
+      "git_blob_sha1": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/tokenizer/merges.txt",
+      "destination": "tokenizer/merges.txt"
+    },
+    {
+      "filename": "tokenizer/tokenizer.json",
+      "expected_size_bytes": 7032403,
+      "sha256": null,
+      "git_blob_sha1": "c6cc1014128b19d1fc46b1d30a23e3b1d35db421",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/tokenizer/tokenizer.json",
+      "destination": "tokenizer/tokenizer.json"
+    },
+    {
+      "filename": "tokenizer/tokenizer_config.json",
+      "expected_size_bytes": 11003,
+      "sha256": null,
+      "git_blob_sha1": "204d76f78dac6dedc820418c30bf01145de78a21",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/tokenizer/tokenizer_config.json",
+      "destination": "tokenizer/tokenizer_config.json"
+    },
+    {
+      "filename": "tokenizer/vocab.json",
+      "expected_size_bytes": 2776833,
+      "sha256": null,
+      "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/tokenizer/vocab.json",
+      "destination": "tokenizer/vocab.json"
+    },
+    {
+      "filename": "transformer/config.json",
+      "expected_size_bytes": 546,
+      "sha256": null,
+      "git_blob_sha1": "c251a4133c81852a150c6668a570e142dc776b6e",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/config.json",
+      "destination": "transformer/config.json"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00001-of-00014.safetensors",
+      "expected_size_bytes": 4825958704,
+      "sha256": "2d847200c45c09dd7f973c1b096663068408ef851ee0b3711d059b6dc5dcd028",
+      "git_blob_sha1": "78e7c04f1246f7fd29127ba802f4c1fd65776404",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00001-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00001-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00002-of-00014.safetensors",
+      "expected_size_bytes": 4702158032,
+      "sha256": "2c4d362eddd2802180ac9c744849eb9ba8d9c8b984bdf9822cb02ed004b29184",
+      "git_blob_sha1": "4a79d68cef731db07fafbe78d9d5c6d5ddf9f395",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00002-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00002-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00003-of-00014.safetensors",
+      "expected_size_bytes": 4933368192,
+      "sha256": "949c5aafbbfa5654da730a6a7fafd75adb164d0857b095a30e8bb6d390887d69",
+      "git_blob_sha1": "f69102656be6332afea3376b76a81a2190b2aa89",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00003-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00003-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00004-of-00014.safetensors",
+      "expected_size_bytes": 4567069608,
+      "sha256": "eef7616790105ee839766bb2027203bf2c0d87c6aa038dca84145a8675f5ce28",
+      "git_blob_sha1": "663bd8d4ca0dfa722c99ca01d54049dd7efa0515",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00004-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00004-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00005-of-00014.safetensors",
+      "expected_size_bytes": 4702158080,
+      "sha256": "43fdf42d638e8bc6745f713fae80c93bb301807a1a5ae7249344ce28e202a494",
+      "git_blob_sha1": "338b0e9ce0fadd8aa27a253e50a3dbd565ded8ec",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00005-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00005-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00006-of-00014.safetensors",
+      "expected_size_bytes": 4933368232,
+      "sha256": "6442510b34d173653f0cce5c964b935395a8f7accf0b9cc0aa31aec59805239d",
+      "git_blob_sha1": "aff5d426da7d9972f3adb29f02cffaf62f94f9c1",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00006-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00006-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00007-of-00014.safetensors",
+      "expected_size_bytes": 4567069608,
+      "sha256": "29f48f535c91dac76496ca821eeb16ca24bc4caf3f0cae8b920a89b1f966da6d",
+      "git_blob_sha1": "e23672b7490bcd26fcb50976b89903acd85fc6ff",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00007-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00007-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00008-of-00014.safetensors",
+      "expected_size_bytes": 4702158080,
+      "sha256": "c711b096c764bd60f0b8b6ad49518bfab6d614fb788c725add8741c0674a4cd8",
+      "git_blob_sha1": "a7c89c8303ae2cace7518f9d995522e00872788e",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00008-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00008-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00009-of-00014.safetensors",
+      "expected_size_bytes": 4933368232,
+      "sha256": "44428defe3976cbb87635ad200b958199e739986697cd29fdf27aeb7294b5944",
+      "git_blob_sha1": "a63bcdf9be4d78b32124fcc032fbc1245f39ec05",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00009-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00009-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00010-of-00014.safetensors",
+      "expected_size_bytes": 4567069608,
+      "sha256": "3d44939c374c9da382e9c6877e1946adf7b84e08c7a881c068f228d6849411c9",
+      "git_blob_sha1": "e3b94e045a76f7cc87b17add5983165a800214a5",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00010-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00010-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00011-of-00014.safetensors",
+      "expected_size_bytes": 4702158080,
+      "sha256": "224d24430b58127a5577721084e0e704a0e74ec96dd7c35bc6fc0994ebd87c33",
+      "git_blob_sha1": "72a25189806a418d770b37ae8efc9b0d53fc312b",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00011-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00011-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00012-of-00014.safetensors",
+      "expected_size_bytes": 4933368232,
+      "sha256": "48fa2bd8fe134eef565ab2464f1c2589a6657cba0d14283dfc06b532f8961f3c",
+      "git_blob_sha1": "9545750c42b012ae13089df388d1569d10ad2a72",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00012-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00012-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00013-of-00014.safetensors",
+      "expected_size_bytes": 4567069608,
+      "sha256": "be5b4b1809f9d546ffd4b3fcf41e5c1e02b819125caa6bc105c109b04c051bd3",
+      "git_blob_sha1": "5827d7644a1ebc1ce9fcf40607857257f14f5659",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00013-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00013-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model-00014-of-00014.safetensors",
+      "expected_size_bytes": 4644161920,
+      "sha256": "8fbd5e6c1fb1df7ce988ca90f3d59e7610e465c7517e4b344eda4a214ba4b97d",
+      "git_blob_sha1": "5c97657ddfa2a1cf31bb6460a25c1caeccfe5a0c",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model-00014-of-00014.safetensors",
+      "destination": "transformer/diffusion_pytorch_model-00014-of-00014.safetensors"
+    },
+    {
+      "filename": "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "expected_size_bytes": 64488,
+      "sha256": null,
+      "git_blob_sha1": "da038def25abb5a5e4be509816ee55a0b7105e09",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/transformer/diffusion_pytorch_model.safetensors.index.json",
+      "destination": "transformer/diffusion_pytorch_model.safetensors.index.json"
+    },
+    {
+      "filename": "vae/config.json",
+      "expected_size_bytes": 2011,
+      "sha256": null,
+      "git_blob_sha1": "ed4874a5886972f4029fcd99cbbe72de0177b2c9",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/vae/config.json",
+      "destination": "vae/config.json"
+    },
+    {
+      "filename": "vae/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "expected_size_bytes": 5061033024,
+      "sha256": "72f4c6be84ac0674f27398cde991dd9d719762f3952c4921aa66b2ce542f6374",
+      "git_blob_sha1": "73f63f98715bce2897a36685ee6e3338f1a43416",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/vae/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "destination": "vae/diffusion_pytorch_model-00001-of-00003.safetensors"
+    },
+    {
+      "filename": "vae/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "expected_size_bytes": 4955986528,
+      "sha256": "2e05e8bc23fa4071043e17fd242be8acd0685e781a43987432b2eae925be4198",
+      "git_blob_sha1": "d8083e40d1b26ed6ed02afd3bd4390fff32f6af5",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/vae/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "destination": "vae/diffusion_pytorch_model-00002-of-00003.safetensors"
+    },
+    {
+      "filename": "vae/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "expected_size_bytes": 398539336,
+      "sha256": "c05d6ac4b1a33de372799d708531da6320f6a3ce6d1ce6d895e770988e004a39",
+      "git_blob_sha1": "1c31fd275aa880a3fb6ac88ae62ac02e79d9a61f",
+      "hash_evidence": "published_lfs_sha256",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/vae/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "destination": "vae/diffusion_pytorch_model-00003-of-00003.safetensors"
+    },
+    {
+      "filename": "vae/diffusion_pytorch_model.safetensors.index.json",
+      "expected_size_bytes": 74228,
+      "sha256": null,
+      "git_blob_sha1": "05dfb255c44daa4f1ac487f57f18210fa5c19439",
+      "hash_evidence": "pinned_git_blob_sha1",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/vae/diffusion_pytorch_model.safetensors.index.json",
+      "destination": "vae/diffusion_pytorch_model.safetensors.index.json"
+    }
+  ],
+  "excluded_folders": [
+    "transformer_ref",
+    "h3-base",
+    "h3-base-ref",
+    "docs"
+  ],
+  "license_source": "https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/42ed227ee7df40d41602854ae760620d6eb651fe/LICENSE",
+  "license_sha256": "59b99642b95ea21630e311198ddbfffbfe05aadba0c2f5d884cbdf4efcc90f44",
+  "download_bytes": 144039659327,
+  "source": "https://huggingface.co/docs/diffusers/v0.41.0/api/pipelines/minimax_h3"
+}

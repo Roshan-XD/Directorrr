@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "minimax-h3-optimized",
+  "name": "MiniMax H3 Optimized",
+  "repository": "DmitryDB/MiniMax-H3-ComfyUI-Quants",
+  "license_source": "https://huggingface.co/DmitryDB/MiniMax-H3-ComfyUI-Quants/blob/06aba4816457400d1dcb12ffd77e37499c8116b1/LICENSE",
+  "required_assets": ["diffusion_models/MiniMax-H3_FL2VA-NVFP4.safetensors", "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors", "vae/MiniMax-H3_VideoVAE-FP16.safetensors", "vae/MiniMax-H3_AudioVAE-FP32.safetensors"],
+  "adapter": "minimax-h3-native-v1",
+  "workspaces": ["text-to-video"],
+  "native_audio": true,
+  "continuation": "none",
+  "fps": 24,
+  "frame_multiple": 17,
+  "frame_offset": 5,
+  "durations": [{"seconds": 5, "frames": 124}],
+  "resolutions": [{"id": "development", "width": 960, "height": 544, "aspect": "16:9"}],
+  "qualities": {"Native": 20},
+  "default_resolution": "development",
+  "default_duration": 5,
+  "evidence": ["DmitryDB FL2VA native NVFP4, non-HQ: 33,163,649,303 bytes with encoder and both VAEs.", "Blackwell 16 GB target with offload; 32 GB RAM and this exact GPU workflow are experimental, not measured guarantees.", "Fixed native T2VA graph: euler/simple, 20 steps, video/audio shifts 12/3. Native audio included; no custom nodes or repository code."],
+  "blockers": []
+}

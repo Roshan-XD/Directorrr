@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "wan-windows-candidate",
+  "name": "Wan Windows runtime candidate (untested, not installable)",
+  "python_version": "3.13.16",
+  "architecture": "AMD64",
+  "comfyui_commit": "b0b743566f65daafc423b4fea8a2fbda94b3384a",
+  "pytorch_version": "2.12.1+cu130",
+  "cuda_wheel": "cu130",
+  "torchvision_version": "0.27.1+cu130",
+  "dependencies": [
+    {"name": "torch", "version": "2.12.1+cu130"},
+    {"name": "torchvision", "version": "0.27.1+cu130"},
+    {"name": "comfyui-frontend-package", "version": "1.53.10"},
+    {"name": "comfyui-workflow-templates", "version": "0.11.76"},
+    {"name": "comfyui-embedded-docs", "version": "0.5.13"},
+    {"name": "comfy-kitchen", "version": "0.2.37"},
+    {"name": "comfy-aimdo", "version": "0.5.5"},
+    {"name": "transformers", "version": null},
+    {"name": "safetensors", "version": null}
+  ],
+  "artifacts": [],
+  "validation_stages": ["inventory", "profile_identity", "ownership", "python_import", "cuda", "allocation", "startup", "workflow"],
+  "evidence_quality": "verified_metadata",
+  "evidence_sources": ["https://github.com/Comfy-Org/ComfyUI/commit/b0b743566f65daafc423b4fea8a2fbda94b3384a", "https://pytorch.org/get-started/previous-versions/"],
+  "unresolved_requirements": ["Complete transitive dependency lock and licenses are missing.", "Artifact URLs, exact byte sizes and SHA-256 inventory are not frozen.", "Private base interpreter mechanism and execution checks remain unapproved and untested.", "This is a partial dependency inventory; see docs/runtime-profile.md for upstream requirements."]
+}

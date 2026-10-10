@@ -1,0 +1,366 @@
+{
+  "item": {
+    "manifest": {
+      "schema_version": 2,
+      "id": "fixture-tiny",
+      "name": "MOCK installation fixture (not an AI model)",
+      "description": "Synthetic offline byte fixture. Never usable for generation; repositories/revisions are fictional.",
+      "is_mock": true,
+      "is_fixture": true,
+      "tasks": ["text-to-video"],
+      "runtime": "comfyui",
+      "license": "Director-Fixture-Only",
+      "huggingface_repo_id": null,
+      "requirements": {
+        "min_ram_gb": null,
+        "min_free_storage_gb": null,
+        "gpu_required": false,
+        "supported_gpu_vendors": [],
+        "min_vram_gb": 0.0,
+        "gpu_architectures": null,
+        "limitations": []
+      },
+      "pinned_revision": null,
+      "components": [
+        {
+          "id": "tiny",
+          "role": "config",
+          "repository_id": "Director-Fixtures/tiny",
+          "pinned_revision": "0000000000000000000000000000000000000000",
+          "filename": "tiny.txt",
+          "destination": "checkpoints/tiny.txt",
+          "expected_size_bytes": 60,
+          "estimated_size_bytes": null,
+          "sha256": "1aaba7589730e5a0f051dd032083727685840198a8cf02d83062f40a431ad2c9",
+          "precision": null,
+          "license_info": {
+            "identifier": "Director-Fixture-Only",
+            "source": "https://example.invalid/director-fixture-license-v1",
+            "usage_restrictions": [],
+            "acknowledgement_requirements": [
+              "Acknowledge that this is a test fixture, not an AI model."
+            ]
+          },
+          "evidence": []
+        }
+      ],
+      "license_info": {
+        "identifier": "Director-Fixture-Only",
+        "source": "https://example.invalid/director-fixture-license-v1",
+        "usage_restrictions": [],
+        "acknowledgement_requirements": [
+          "Acknowledge that this is a test fixture, not an AI model."
+        ]
+      },
+      "execution_profile": {
+        "operating_systems": null,
+        "backend": "cpu",
+        "runtime_version_constraint": null,
+        "runtime_pinned_revision": null,
+        "workflow": null,
+        "dependencies": [],
+        "custom_nodes": [],
+        "width": 1,
+        "height": 1,
+        "frames": 1,
+        "batch_size": 1,
+        "offloading": null
+      },
+      "support_status": "researched",
+      "requirements_quality": "unverified",
+      "evidence": [
+        {
+          "subject": "offline fixture",
+          "quality": "unverified",
+          "source": null,
+          "checked_on": null,
+          "detail": "Fictional test metadata only."
+        }
+      ],
+      "unresolved_assumptions": [
+        "Offline installation fixture has no inference implementation."
+      ],
+      "installation_overhead_bytes": null,
+      "artifact_installation_reviewed": true,
+      "license_documents": [
+        {
+          "id": "fixture-license",
+          "version": "1",
+          "source": null,
+          "text": "Director fixture license v1: this tiny synthetic text is provided for installation testing only. No AI weights or generation capabilities.",
+          "sha256": "1d31ae8c568bfc290fb8b9a84b17c2d9817f4dcfe83b94ec7593b0418b4690e7"
+        }
+      ]
+    },
+    "compatibility": {
+      "status": "unknown",
+      "checks": [
+        {
+          "resource": "ram",
+          "status": "unknown",
+          "reason": "Required ram capacity is unverified."
+        },
+        {
+          "resource": "storage",
+          "status": "unknown",
+          "reason": "Required storage capacity is unverified."
+        },
+        {
+          "resource": "gpu",
+          "status": "compatible",
+          "reason": "This manifest allows CPU-only operation."
+        }
+      ],
+      "notes": [
+        "Basic declared hardware check only; driver, runtime, speed, and generation success are not verified.",
+        "MOCK metadata only: requirements are fictional; this model cannot generate video.",
+        "Offline installation fixture has no inference implementation."
+      ],
+      "assessment": "unknown",
+      "profile_checks": [
+        {
+          "resource": "ram",
+          "status": "unknown",
+          "reason": "Capacity requirement evidence is unverified or estimated."
+        },
+        {
+          "resource": "storage",
+          "status": "unknown",
+          "reason": "Capacity requirement evidence is unverified or estimated."
+        },
+        {
+          "resource": "gpu",
+          "status": "unknown",
+          "reason": "Capacity requirement evidence is unverified or estimated."
+        },
+        {
+          "resource": "operating_system",
+          "status": "unknown",
+          "reason": "Detected Windows; profile operating systems: None."
+        },
+        {
+          "resource": "backend",
+          "status": "pass",
+          "reason": "Target backend: cpu; driver/kernel readiness is checked separately."
+        },
+        {
+          "resource": "runtime",
+          "status": "unknown",
+          "reason": "Runtime has not been inspected; backend packages do not establish ComfyUI readiness."
+        }
+      ]
+    }
+  },
+  "plan": {
+    "model_id": "fixture-tiny",
+    "read_only": true,
+    "ready_for_installation": false,
+    "status": "blocked",
+    "components": [
+      {
+        "component": {
+          "id": "tiny",
+          "role": "config",
+          "repository_id": "Director-Fixtures/tiny",
+          "pinned_revision": "0000000000000000000000000000000000000000",
+          "filename": "tiny.txt",
+          "destination": "checkpoints/tiny.txt",
+          "expected_size_bytes": 60,
+          "estimated_size_bytes": null,
+          "sha256": "1aaba7589730e5a0f051dd032083727685840198a8cf02d83062f40a431ad2c9",
+          "precision": null,
+          "license_info": {
+            "identifier": "Director-Fixture-Only",
+            "source": "https://example.invalid/director-fixture-license-v1",
+            "usage_restrictions": [],
+            "acknowledgement_requirements": [
+              "Acknowledge that this is a test fixture, not an AI model."
+            ]
+          },
+          "evidence": []
+        },
+        "destination_path": "D:/Director-test/models/checkpoints/tiny.txt"
+      }
+    ],
+    "known_download_bytes": 60,
+    "total_expected_download_bytes": 60,
+    "total_estimated_download_bytes": 60,
+    "required_storage_bytes": null,
+    "storage": {
+      "root": "D:/Director-test/models",
+      "free_bytes": 1000000000,
+      "total_bytes": 2000000000,
+      "measured_path": "D:/Director-test"
+    },
+    "runtime_requirements": {
+      "operating_systems": null,
+      "backend": "cpu",
+      "runtime_version_constraint": null,
+      "runtime_pinned_revision": null,
+      "workflow": null,
+      "dependencies": [],
+      "custom_nodes": [],
+      "width": 1,
+      "height": 1,
+      "frames": 1,
+      "batch_size": 1,
+      "offloading": null
+    },
+    "runtime_observation": {
+      "status": "unknown",
+      "runtime_type": "comfyui",
+      "version": null,
+      "pinned_revision": null,
+      "dependency_versions": {},
+      "custom_node_revisions": {}
+    },
+    "license_info": {
+      "identifier": "Director-Fixture-Only",
+      "source": "https://example.invalid/director-fixture-license-v1",
+      "usage_restrictions": [],
+      "acknowledgement_requirements": [
+        "Acknowledge that this is a test fixture, not an AI model."
+      ]
+    },
+    "compatibility": {
+      "status": "unknown",
+      "checks": [
+        {
+          "resource": "ram",
+          "status": "unknown",
+          "reason": "Required ram capacity is unverified."
+        },
+        {
+          "resource": "storage",
+          "status": "unknown",
+          "reason": "Required storage capacity is unverified."
+        },
+        {
+          "resource": "gpu",
+          "status": "compatible",
+          "reason": "This manifest allows CPU-only operation."
+        }
+      ],
+      "notes": [
+        "Basic declared hardware check only; driver, runtime, speed, and generation success are not verified.",
+        "MOCK metadata only: requirements are fictional; this model cannot generate video.",
+        "Offline installation fixture has no inference implementation."
+      ],
+      "assessment": "unknown",
+      "profile_checks": [
+        {
+          "resource": "ram",
+          "status": "unknown",
+          "reason": "Capacity requirement evidence is unverified or estimated."
+        },
+        {
+          "resource": "storage",
+          "status": "unknown",
+          "reason": "Capacity requirement evidence is unverified or estimated."
+        },
+        {
+          "resource": "gpu",
+          "status": "unknown",
+          "reason": "Capacity requirement evidence is unverified or estimated."
+        },
+        {
+          "resource": "operating_system",
+          "status": "unknown",
+          "reason": "Detected Windows; profile operating systems: None."
+        },
+        {
+          "resource": "backend",
+          "status": "pass",
+          "reason": "Target backend: cpu; driver/kernel readiness is checked separately."
+        },
+        {
+          "resource": "runtime",
+          "status": "unknown",
+          "reason": "Runtime has not been inspected; backend packages do not establish ComfyUI readiness."
+        }
+      ]
+    },
+    "missing_metadata": [
+      "huggingface_repo_id",
+      "pinned_revision",
+      "installation_overhead_bytes",
+      "requirements.min_ram_gb",
+      "requirements.min_free_storage_gb",
+      "components.tiny.evidence",
+      "execution_profile.operating_systems",
+      "execution_profile.runtime_version_constraint",
+      "execution_profile.runtime_pinned_revision",
+      "execution_profile.workflow"
+    ],
+    "blockers": [
+      {
+        "code": "no_installable_components",
+        "message": "Mock models have no installable model files.",
+        "component_id": null
+      },
+      {
+        "code": "missing_metadata",
+        "message": "Required installation metadata is incomplete; see missing_metadata.",
+        "component_id": null
+      },
+      {
+        "code": "unresolved_assumptions",
+        "message": "Compatibility or provenance assumptions require verification.",
+        "component_id": null
+      },
+      {
+        "code": "unverified_prerequisites",
+        "message": "Hardware or runtime prerequisites remain unknown.",
+        "component_id": null
+      }
+    ],
+    "warnings": [
+      "Read-only plan: no files or folders are created. Artifact installation does not establish generation readiness.",
+      "VRAM is an estimate, not a verified measurement.",
+      "Offline installation fixture has no inference implementation.",
+      "Generation has not been locally validated for this model/profile.",
+      "Compatibility is unknown; this is not a hardware certification.",
+      "Full storage budget is unknown; rounded estimates exclude unverified runtime/cache/temporary overhead."
+    ],
+    "artifact_review": {
+      "can_review": true,
+      "blockers": [],
+      "expected_download_bytes": 60,
+      "required_storage_bytes": 16777396,
+      "destination_template": "D:/Director-test/models/.director/installed/fixture-tiny/<job-id>",
+      "requires_acknowledgement": true,
+      "requires_manager_key": true,
+      "generation_ready": false
+    }
+  },
+  "license": {
+    "model_id": "fixture-tiny",
+    "policy_version": "1",
+    "license_info": {
+      "identifier": "Director-Fixture-Only",
+      "source": "https://example.invalid/director-fixture-license-v1",
+      "usage_restrictions": [],
+      "acknowledgement_requirements": [
+        "Acknowledge that this is a test fixture, not an AI model."
+      ]
+    },
+    "documents": [
+      {
+        "id": "fixture-license",
+        "version": "1",
+        "source": null,
+        "text": "Director fixture license v1: this tiny synthetic text is provided for installation testing only. No AI weights or generation capabilities.",
+        "sha256": "1d31ae8c568bfc290fb8b9a84b17c2d9817f4dcfe83b94ec7593b0418b4690e7"
+      }
+    ],
+    "revisions": [
+      {
+        "id": "tiny",
+        "repo": "Director-Fixtures/tiny",
+        "revision": "0000000000000000000000000000000000000000"
+      }
+    ],
+    "document_set_digest": "ee77f6b0d8db5564ba2bd4c7155df7e6894ac1d438139273f19b0eb05ec68292",
+    "manifest_digest": "ad431b24b789242267e1baa4e5bbb425f3915b52a6e3311f39c18ba164d70474"
+  }
+}

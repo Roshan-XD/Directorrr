@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "mock-cpu-video",
+  "name": "MOCK CPU Video Example",
+  "description": "Fictional CPU-only example for testing registry and compatibility. Cannot generate video.",
+  "is_mock": true,
+  "tasks": ["text-to-video"],
+  "runtime": "comfyui",
+  "license": "MOCK - no model weights or real model license",
+  "huggingface_repo_id": null,
+  "requirements": {
+    "min_ram_gb": 8,
+    "min_free_storage_gb": 10,
+    "gpu_required": false,
+    "supported_gpu_vendors": [],
+    "min_vram_gb": 0
+  }
+}

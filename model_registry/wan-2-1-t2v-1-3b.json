@@ -1,0 +1,264 @@
+{
+  "schema_version": 2,
+  "id": "wan-2-1-t2v-1-3b",
+  "name": "Wan 2.1 T2V-1.3B (researched, generation unverified)",
+  "description": "Native ComfyUI FP16 text-to-video profile with an FP8 UMT5 encoder. Metadata and planning only; not installed or validated.",
+  "is_mock": false,
+  "tasks": [
+    "text-to-video"
+  ],
+  "runtime": "comfyui",
+  "license": "Apache-2.0",
+  "huggingface_repo_id": "Wan-AI/Wan2.1-T2V-1.3B",
+  "pinned_revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+  "license_info": {
+    "identifier": "Apache-2.0",
+    "source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/37ec512624d61f7aa208f7ea8140a131f93afc9a/LICENSE.txt",
+    "usage_restrictions": [
+      "The publisher's model card states expectations concerning unlawful/harmful content, privacy, misinformation, and vulnerable populations; review the actual card and license."
+    ],
+    "acknowledgement_requirements": [
+      "Preserve the license and applicable attribution/NOTICE text when redistributing; mark modified files. License terms remain authoritative."
+    ]
+  },
+  "requirements": {
+    "min_ram_gb": null,
+    "min_free_storage_gb": null,
+    "gpu_required": true,
+    "supported_gpu_vendors": [
+      "nvidia"
+    ],
+    "min_vram_gb": null,
+    "gpu_architectures": null,
+    "limitations": [
+      "NVIDIA/CUDA is the selected first validation profile, not a claim that the model family cannot run on other backends.",
+      "Publisher's 8.19 GB VRAM report is for the original runner with offloading and CPU T5 encoding, not a measured ComfyUI minimum.",
+      "Total RAM/VRAM do not establish available memory, driver/kernel support, speed, or generation success."
+    ]
+  },
+  "support_status": "researched",
+  "requirements_quality": "unverified",
+  "installation_overhead_bytes": null,
+  "execution_profile": {
+    "operating_systems": [
+      "Windows"
+    ],
+    "backend": "cuda",
+    "runtime_version_constraint": null,
+    "runtime_pinned_revision": null,
+    "workflow": {
+      "source": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI_examples/cb13911e7d83e4f61ca12e29629cab85a6c08856/wan/text_to_video_wan.json",
+      "pinned_revision": "cb13911e7d83e4f61ca12e29629cab85a6c08856",
+      "format": "ui",
+      "required_core_nodes": [
+        "UNETLoader",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "EmptyHunyuanLatentVideo",
+        "ModelSamplingSD3",
+        "KSampler",
+        "VAELoader",
+        "VAEDecode",
+        "SaveAnimatedWEBP",
+        "SaveWEBM"
+      ]
+    },
+    "dependencies": [
+      {
+        "name": "torch",
+        "version_constraint": null
+      },
+      {
+        "name": "nvidia-driver",
+        "version_constraint": null
+      }
+    ],
+    "custom_nodes": [],
+    "width": 832,
+    "height": 480,
+    "frames": 33,
+    "batch_size": 1,
+    "offloading": "Native ComfyUI memory management; exact settings and peak memory remain unverified."
+  },
+  "components": [
+    {
+      "id": "diffusion",
+      "role": "diffusion_model",
+      "repository_id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+      "pinned_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+      "filename": "split_files/diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors",
+      "destination": "diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors",
+      "expected_size_bytes": 2838303560,
+      "estimated_size_bytes": null,
+      "sha256": "be531024cd9018cb5b48c40cfbb6a6191645b1c792eb8bf4f8c1c6e10f924dc5",
+      "precision": "fp16",
+      "license_info": {
+        "identifier": "Apache-2.0",
+        "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+        "usage_restrictions": [
+          "Publisher declares Apache-2.0 for this repository; this declaration does not verify complete converted-artifact provenance or notices."
+        ],
+        "acknowledgement_requirements": [
+          "Preserve applicable licenses, attribution and NOTICE text, and modification notices. Converted-artifact notice/provenance review remains unresolved."
+        ]
+      },
+      "evidence": [
+        {
+          "subject": "pinned file identity, exact byte length and SHA-256",
+          "quality": "verified_metadata",
+          "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/diffusion_models?expand=true",
+          "checked_on": "2026-10-09",
+          "detail": "Unauthenticated pinned tree API gives size and lfs.oid SHA-256, matching the published LFS pointer/commit metadata. The Xet hash is different and is not used as SHA-256. No weight body was downloaded or locally hashed."
+        },
+        {
+          "subject": "repository license declaration",
+          "quality": "verified_metadata",
+          "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+          "checked_on": "2026-10-09",
+          "detail": "Pinned publisher README declares Apache-2.0. No standalone license/NOTICE is listed at the pinned root; full conversion attribution/provenance remains unresolved."
+        },
+        {
+          "subject": "public repository access",
+          "quality": "verified_metadata",
+          "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+          "checked_on": "2026-10-09",
+          "detail": "Unauthenticated API reports private=false, gated=false, disabled=false. These are time-sensitive repository flags, not a completed binary transfer test; recheck before future installation."
+        }
+      ]
+    },
+    {
+      "id": "text-encoder",
+      "role": "text_encoder",
+      "repository_id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+      "pinned_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+      "filename": "split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "destination": "text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "expected_size_bytes": 6735906897,
+      "estimated_size_bytes": null,
+      "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68",
+      "precision": "fp8_e4m3fn_scaled",
+      "license_info": {
+        "identifier": "Apache-2.0",
+        "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+        "usage_restrictions": [
+          "Publisher declares Apache-2.0 for this repository; this declaration does not verify complete converted-artifact provenance or notices."
+        ],
+        "acknowledgement_requirements": [
+          "Preserve applicable licenses, attribution and NOTICE text, and modification notices. Converted-artifact notice/provenance review remains unresolved."
+        ]
+      },
+      "evidence": [
+        {
+          "subject": "pinned file identity, exact byte length and SHA-256",
+          "quality": "verified_metadata",
+          "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/text_encoders?expand=true",
+          "checked_on": "2026-10-09",
+          "detail": "Unauthenticated pinned tree API gives size and lfs.oid SHA-256, matching the published LFS pointer/commit metadata. The Xet hash is different and is not used as SHA-256. No weight body was downloaded or locally hashed."
+        },
+        {
+          "subject": "repository license declaration",
+          "quality": "verified_metadata",
+          "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+          "checked_on": "2026-10-09",
+          "detail": "Pinned publisher README declares Apache-2.0. No standalone license/NOTICE is listed at the pinned root; full conversion attribution/provenance remains unresolved."
+        },
+        {
+          "subject": "public repository access",
+          "quality": "verified_metadata",
+          "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+          "checked_on": "2026-10-09",
+          "detail": "Unauthenticated API reports private=false, gated=false, disabled=false. These are time-sensitive repository flags, not a completed binary transfer test; recheck before future installation."
+        }
+      ]
+    },
+    {
+      "id": "vae",
+      "role": "vae",
+      "repository_id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+      "pinned_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+      "filename": "split_files/vae/wan_2.1_vae.safetensors",
+      "destination": "vae/wan_2.1_vae.safetensors",
+      "expected_size_bytes": 253815318,
+      "estimated_size_bytes": null,
+      "sha256": "2fc39d31359a4b0a64f55876d8ff7fa8d780956ae2cb13463b0223e15148976b",
+      "precision": null,
+      "license_info": {
+        "identifier": "Apache-2.0",
+        "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+        "usage_restrictions": [
+          "Publisher declares Apache-2.0 for this repository; this declaration does not verify complete converted-artifact provenance or notices."
+        ],
+        "acknowledgement_requirements": [
+          "Preserve applicable licenses, attribution and NOTICE text, and modification notices. Converted-artifact notice/provenance review remains unresolved."
+        ]
+      },
+      "evidence": [
+        {
+          "subject": "pinned file identity, exact byte length and SHA-256",
+          "quality": "verified_metadata",
+          "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/vae?expand=true",
+          "checked_on": "2026-10-09",
+          "detail": "Unauthenticated pinned tree API gives size and lfs.oid SHA-256, matching the published LFS pointer/commit metadata. The Xet hash is different and is not used as SHA-256. No weight body was downloaded or locally hashed."
+        },
+        {
+          "subject": "repository license declaration",
+          "quality": "verified_metadata",
+          "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+          "checked_on": "2026-10-09",
+          "detail": "Pinned publisher README declares Apache-2.0. No standalone license/NOTICE is listed at the pinned root; full conversion attribution/provenance remains unresolved."
+        },
+        {
+          "subject": "public repository access",
+          "quality": "verified_metadata",
+          "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+          "checked_on": "2026-10-09",
+          "detail": "Unauthenticated API reports private=false, gated=false, disabled=false. These are time-sensitive repository flags, not a completed binary transfer test; recheck before future installation."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "subject": "identity, capability and license",
+      "quality": "verified_metadata",
+      "source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+      "checked_on": "2026-10-08",
+      "detail": "Official T2V checkpoint; model card labels weights Apache-2.0. See docs/model-research.md."
+    },
+    {
+      "subject": "native workflow",
+      "quality": "verified_metadata",
+      "source": "https://comfyanonymous.github.io/ComfyUI_examples/wan/text_to_video_wan.json",
+      "checked_on": "2026-10-08",
+      "detail": "UI workflow uses the three selected repackaged components and core nodes; no third-party custom nodes. This is not an API submission payload."
+    },
+    {
+      "subject": "VRAM",
+      "quality": "publisher_report",
+      "source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+      "checked_on": "2026-10-08",
+      "detail": "8.19 GB report is scoped to the original runner; not used as a ComfyUI requirement."
+    },
+    {
+      "subject": "upstream repository pin and public access",
+      "quality": "verified_metadata",
+      "source": "https://huggingface.co/api/models/Wan-AI/Wan2.1-T2V-1.3B",
+      "checked_on": "2026-10-09",
+      "detail": "Unauthenticated API returned commit 37ec512624d61f7aa208f7ea8140a131f93afc9a, private=false, gated=false, disabled=false. Upstream identity is separate from the actual repackaged component repository."
+    },
+    {
+      "subject": "immutable native workflow",
+      "quality": "verified_metadata",
+      "source": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI_examples/cb13911e7d83e4f61ca12e29629cab85a6c08856/wan/text_to_video_wan.json",
+      "checked_on": "2026-10-09",
+      "detail": "Official examples repository commit pins the same three loaders and 832x480/33-frame/batch-1/30-step UI workflow. Source JSON was 9029 bytes with SHA-256 436b9c074b677011b0f50a9feb8c4b4128abbbd9e4acaf34d8eeb80efbd74a64. It does not declare a minimum ComfyUI version; no generation was performed."
+    }
+  ],
+  "unresolved_assumptions": [
+    "Converted-artifact provenance, complete component license/NOTICE texts and attribution require review; the publisher Apache-2.0 declaration alone is not a complete notice inventory.",
+    "Minimum ComfyUI and dependency versions, Windows CUDA/driver support, and GPU architectures remain unverified.",
+    "Peak RAM/VRAM and installation/cache/temporary storage overhead for the selected preset have not been measured.",
+    "Published SHA-256 values have not been checked against local weight files; no binary access/transfer has been tested.",
+    "The pinned UI workflow saves animated WebP and has disabled WebM output; API conversion and a suitable video encoding path remain unvalidated."
+  ]
+}

@@ -1,0 +1,1095 @@
+{
+  "hardware": {
+    "platform": "Windows",
+    "cpu": {
+      "name": "Test CPU",
+      "physical_cores": 8,
+      "logical_cores": 16
+    },
+    "ram": {
+      "total_gb": 32.0,
+      "available_gb": 20.0
+    },
+    "gpus": [
+      {
+        "name": "Test GPU",
+        "vendor": "amd",
+        "vram_gb": null,
+        "vram_is_estimate": true,
+        "source": "windows_cim",
+        "architecture": null
+      }
+    ],
+    "gpu_detection_complete": true,
+    "storage": {
+      "path": "D:/test",
+      "total_gb": 500.0,
+      "free_gb": 100.0
+    },
+    "warnings": ["VRAM is an estimate, not a verified measurement."]
+  },
+  "models": {
+    "models": [
+      {
+        "manifest": {
+          "schema_version": 1,
+          "id": "mock-cpu-video",
+          "name": "MOCK CPU Video Example",
+          "description": "Fictional CPU-only example for testing registry and compatibility. Cannot generate video.",
+          "is_mock": true,
+          "is_fixture": false,
+          "tasks": ["text-to-video"],
+          "runtime": "comfyui",
+          "license": "MOCK - no model weights or real model license",
+          "huggingface_repo_id": null,
+          "requirements": {
+            "min_ram_gb": 8.0,
+            "min_free_storage_gb": 10.0,
+            "gpu_required": false,
+            "supported_gpu_vendors": [],
+            "min_vram_gb": 0.0,
+            "gpu_architectures": null,
+            "limitations": []
+          },
+          "pinned_revision": null,
+          "components": [],
+          "license_info": null,
+          "execution_profile": null,
+          "support_status": "researched",
+          "requirements_quality": "unverified",
+          "evidence": [],
+          "unresolved_assumptions": [],
+          "installation_overhead_bytes": null,
+          "artifact_installation_reviewed": false,
+          "license_documents": []
+        },
+        "compatibility": {
+          "status": "compatible",
+          "checks": [
+            {
+              "resource": "ram",
+              "status": "compatible",
+              "reason": "32.00 GiB detected; 8 GiB required."
+            },
+            {
+              "resource": "storage",
+              "status": "compatible",
+              "reason": "100.00 GiB detected; 10 GiB required."
+            },
+            {
+              "resource": "gpu",
+              "status": "compatible",
+              "reason": "This manifest allows CPU-only operation."
+            }
+          ],
+          "notes": [
+            "Basic declared hardware check only; driver, runtime, speed, and generation success are not verified.",
+            "MOCK metadata only: requirements are fictional; this model cannot generate video."
+          ],
+          "assessment": "unknown",
+          "profile_checks": [
+            {
+              "resource": "ram",
+              "status": "unknown",
+              "reason": "Capacity requirement evidence is unverified or estimated."
+            },
+            {
+              "resource": "storage",
+              "status": "unknown",
+              "reason": "Capacity requirement evidence is unverified or estimated."
+            },
+            {
+              "resource": "gpu",
+              "status": "unknown",
+              "reason": "Capacity requirement evidence is unverified or estimated."
+            },
+            {
+              "resource": "profile",
+              "status": "unknown",
+              "reason": "No execution profile has been researched."
+            }
+          ]
+        }
+      },
+      {
+        "manifest": {
+          "schema_version": 1,
+          "id": "mock-gpu-video",
+          "name": "MOCK GPU Video Example",
+          "description": "Fictional GPU example for testing multiple vendors. Does not claim real ComfyUI vendor support. Cannot generate video.",
+          "is_mock": true,
+          "is_fixture": false,
+          "tasks": ["text-to-video", "image-to-video"],
+          "runtime": "comfyui",
+          "license": "MOCK - no model weights or real model license",
+          "huggingface_repo_id": null,
+          "requirements": {
+            "min_ram_gb": 16.0,
+            "min_free_storage_gb": 30.0,
+            "gpu_required": true,
+            "supported_gpu_vendors": ["nvidia", "amd", "intel"],
+            "min_vram_gb": 8.0,
+            "gpu_architectures": null,
+            "limitations": []
+          },
+          "pinned_revision": null,
+          "components": [],
+          "license_info": null,
+          "execution_profile": null,
+          "support_status": "researched",
+          "requirements_quality": "unverified",
+          "evidence": [],
+          "unresolved_assumptions": [],
+          "installation_overhead_bytes": null,
+          "artifact_installation_reviewed": false,
+          "license_documents": []
+        },
+        "compatibility": {
+          "status": "unknown",
+          "checks": [
+            {
+              "resource": "ram",
+              "status": "compatible",
+              "reason": "32.00 GiB detected; 16 GiB required."
+            },
+            {
+              "resource": "storage",
+              "status": "compatible",
+              "reason": "100.00 GiB detected; 30 GiB required."
+            },
+            {
+              "resource": "gpu",
+              "status": "unknown",
+              "reason": "GPU vendor or reliable VRAM information is incomplete."
+            }
+          ],
+          "notes": [
+            "Basic declared hardware check only; driver, runtime, speed, and generation success are not verified.",
+            "MOCK metadata only: requirements are fictional; this model cannot generate video."
+          ],
+          "assessment": "unknown",
+          "profile_checks": [
+            {
+              "resource": "ram",
+              "status": "unknown",
+              "reason": "Capacity requirement evidence is unverified or estimated."
+            },
+            {
+              "resource": "storage",
+              "status": "unknown",
+              "reason": "Capacity requirement evidence is unverified or estimated."
+            },
+            {
+              "resource": "gpu",
+              "status": "unknown",
+              "reason": "Capacity requirement evidence is unverified or estimated."
+            },
+            {
+              "resource": "profile",
+              "status": "unknown",
+              "reason": "No execution profile has been researched."
+            }
+          ]
+        }
+      },
+      {
+        "manifest": {
+          "schema_version": 2,
+          "id": "wan-2-1-t2v-1-3b",
+          "name": "Wan 2.1 T2V-1.3B (researched, generation unverified)",
+          "description": "Native ComfyUI FP16 text-to-video profile with an FP8 UMT5 encoder. Metadata and planning only; not installed or validated.",
+          "is_mock": false,
+          "is_fixture": false,
+          "tasks": ["text-to-video"],
+          "runtime": "comfyui",
+          "license": "Apache-2.0",
+          "huggingface_repo_id": "Wan-AI/Wan2.1-T2V-1.3B",
+          "requirements": {
+            "min_ram_gb": null,
+            "min_free_storage_gb": null,
+            "gpu_required": true,
+            "supported_gpu_vendors": ["nvidia"],
+            "min_vram_gb": null,
+            "gpu_architectures": null,
+            "limitations": [
+              "NVIDIA/CUDA is the selected first validation profile, not a claim that the model family cannot run on other backends.",
+              "Publisher's 8.19 GB VRAM report is for the original runner with offloading and CPU T5 encoding, not a measured ComfyUI minimum.",
+              "Total RAM/VRAM do not establish available memory, driver/kernel support, speed, or generation success."
+            ]
+          },
+          "pinned_revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+          "components": [
+            {
+              "id": "diffusion",
+              "role": "diffusion_model",
+              "repository_id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+              "pinned_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+              "filename": "split_files/diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors",
+              "destination": "diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors",
+              "expected_size_bytes": 2838303560,
+              "estimated_size_bytes": null,
+              "sha256": "be531024cd9018cb5b48c40cfbb6a6191645b1c792eb8bf4f8c1c6e10f924dc5",
+              "precision": "fp16",
+              "license_info": {
+                "identifier": "Apache-2.0",
+                "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+                "usage_restrictions": [
+                  "Publisher declares Apache-2.0 for this repository; this declaration does not verify complete converted-artifact provenance or notices."
+                ],
+                "acknowledgement_requirements": [
+                  "Preserve applicable licenses, attribution and NOTICE text, and modification notices. Converted-artifact notice/provenance review remains unresolved."
+                ]
+              },
+              "evidence": [
+                {
+                  "subject": "pinned file identity, exact byte length and SHA-256",
+                  "quality": "verified_metadata",
+                  "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/diffusion_models?expand=true",
+                  "checked_on": "2026-10-09",
+                  "detail": "Unauthenticated pinned tree API gives size and lfs.oid SHA-256, matching the published LFS pointer/commit metadata. The Xet hash is different and is not used as SHA-256. No weight body was downloaded or locally hashed."
+                },
+                {
+                  "subject": "repository license declaration",
+                  "quality": "verified_metadata",
+                  "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+                  "checked_on": "2026-10-09",
+                  "detail": "Pinned publisher README declares Apache-2.0. No standalone license/NOTICE is listed at the pinned root; full conversion attribution/provenance remains unresolved."
+                },
+                {
+                  "subject": "public repository access",
+                  "quality": "verified_metadata",
+                  "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+                  "checked_on": "2026-10-09",
+                  "detail": "Unauthenticated API reports private=false, gated=false, disabled=false. These are time-sensitive repository flags, not a completed binary transfer test; recheck before future installation."
+                }
+              ]
+            },
+            {
+              "id": "text-encoder",
+              "role": "text_encoder",
+              "repository_id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+              "pinned_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+              "filename": "split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+              "destination": "text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+              "expected_size_bytes": 6735906897,
+              "estimated_size_bytes": null,
+              "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68",
+              "precision": "fp8_e4m3fn_scaled",
+              "license_info": {
+                "identifier": "Apache-2.0",
+                "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+                "usage_restrictions": [
+                  "Publisher declares Apache-2.0 for this repository; this declaration does not verify complete converted-artifact provenance or notices."
+                ],
+                "acknowledgement_requirements": [
+                  "Preserve applicable licenses, attribution and NOTICE text, and modification notices. Converted-artifact notice/provenance review remains unresolved."
+                ]
+              },
+              "evidence": [
+                {
+                  "subject": "pinned file identity, exact byte length and SHA-256",
+                  "quality": "verified_metadata",
+                  "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/text_encoders?expand=true",
+                  "checked_on": "2026-10-09",
+                  "detail": "Unauthenticated pinned tree API gives size and lfs.oid SHA-256, matching the published LFS pointer/commit metadata. The Xet hash is different and is not used as SHA-256. No weight body was downloaded or locally hashed."
+                },
+                {
+                  "subject": "repository license declaration",
+                  "quality": "verified_metadata",
+                  "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+                  "checked_on": "2026-10-09",
+                  "detail": "Pinned publisher README declares Apache-2.0. No standalone license/NOTICE is listed at the pinned root; full conversion attribution/provenance remains unresolved."
+                },
+                {
+                  "subject": "public repository access",
+                  "quality": "verified_metadata",
+                  "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+                  "checked_on": "2026-10-09",
+                  "detail": "Unauthenticated API reports private=false, gated=false, disabled=false. These are time-sensitive repository flags, not a completed binary transfer test; recheck before future installation."
+                }
+              ]
+            },
+            {
+              "id": "vae",
+              "role": "vae",
+              "repository_id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+              "pinned_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+              "filename": "split_files/vae/wan_2.1_vae.safetensors",
+              "destination": "vae/wan_2.1_vae.safetensors",
+              "expected_size_bytes": 253815318,
+              "estimated_size_bytes": null,
+              "sha256": "2fc39d31359a4b0a64f55876d8ff7fa8d780956ae2cb13463b0223e15148976b",
+              "precision": null,
+              "license_info": {
+                "identifier": "Apache-2.0",
+                "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+                "usage_restrictions": [
+                  "Publisher declares Apache-2.0 for this repository; this declaration does not verify complete converted-artifact provenance or notices."
+                ],
+                "acknowledgement_requirements": [
+                  "Preserve applicable licenses, attribution and NOTICE text, and modification notices. Converted-artifact notice/provenance review remains unresolved."
+                ]
+              },
+              "evidence": [
+                {
+                  "subject": "pinned file identity, exact byte length and SHA-256",
+                  "quality": "verified_metadata",
+                  "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/vae?expand=true",
+                  "checked_on": "2026-10-09",
+                  "detail": "Unauthenticated pinned tree API gives size and lfs.oid SHA-256, matching the published LFS pointer/commit metadata. The Xet hash is different and is not used as SHA-256. No weight body was downloaded or locally hashed."
+                },
+                {
+                  "subject": "repository license declaration",
+                  "quality": "verified_metadata",
+                  "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+                  "checked_on": "2026-10-09",
+                  "detail": "Pinned publisher README declares Apache-2.0. No standalone license/NOTICE is listed at the pinned root; full conversion attribution/provenance remains unresolved."
+                },
+                {
+                  "subject": "public repository access",
+                  "quality": "verified_metadata",
+                  "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+                  "checked_on": "2026-10-09",
+                  "detail": "Unauthenticated API reports private=false, gated=false, disabled=false. These are time-sensitive repository flags, not a completed binary transfer test; recheck before future installation."
+                }
+              ]
+            }
+          ],
+          "license_info": {
+            "identifier": "Apache-2.0",
+            "source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/37ec512624d61f7aa208f7ea8140a131f93afc9a/LICENSE.txt",
+            "usage_restrictions": [
+              "The publisher's model card states expectations concerning unlawful/harmful content, privacy, misinformation, and vulnerable populations; review the actual card and license."
+            ],
+            "acknowledgement_requirements": [
+              "Preserve the license and applicable attribution/NOTICE text when redistributing; mark modified files. License terms remain authoritative."
+            ]
+          },
+          "execution_profile": {
+            "operating_systems": ["Windows"],
+            "backend": "cuda",
+            "runtime_version_constraint": null,
+            "runtime_pinned_revision": null,
+            "workflow": {
+              "source": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI_examples/cb13911e7d83e4f61ca12e29629cab85a6c08856/wan/text_to_video_wan.json",
+              "pinned_revision": "cb13911e7d83e4f61ca12e29629cab85a6c08856",
+              "format": "ui",
+              "required_core_nodes": [
+                "UNETLoader",
+                "CLIPLoader",
+                "CLIPTextEncode",
+                "EmptyHunyuanLatentVideo",
+                "ModelSamplingSD3",
+                "KSampler",
+                "VAELoader",
+                "VAEDecode",
+                "SaveAnimatedWEBP",
+                "SaveWEBM"
+              ]
+            },
+            "dependencies": [
+              {
+                "name": "torch",
+                "version_constraint": null
+              },
+              {
+                "name": "nvidia-driver",
+                "version_constraint": null
+              }
+            ],
+            "custom_nodes": [],
+            "width": 832,
+            "height": 480,
+            "frames": 33,
+            "batch_size": 1,
+            "offloading": "Native ComfyUI memory management; exact settings and peak memory remain unverified."
+          },
+          "support_status": "researched",
+          "requirements_quality": "unverified",
+          "evidence": [
+            {
+              "subject": "identity, capability and license",
+              "quality": "verified_metadata",
+              "source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+              "checked_on": "2026-10-08",
+              "detail": "Official T2V checkpoint; model card labels weights Apache-2.0. See docs/model-research.md."
+            },
+            {
+              "subject": "native workflow",
+              "quality": "verified_metadata",
+              "source": "https://comfyanonymous.github.io/ComfyUI_examples/wan/text_to_video_wan.json",
+              "checked_on": "2026-10-08",
+              "detail": "UI workflow uses the three selected repackaged components and core nodes; no third-party custom nodes. This is not an API submission payload."
+            },
+            {
+              "subject": "VRAM",
+              "quality": "publisher_report",
+              "source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+              "checked_on": "2026-10-08",
+              "detail": "8.19 GB report is scoped to the original runner; not used as a ComfyUI requirement."
+            },
+            {
+              "subject": "upstream repository pin and public access",
+              "quality": "verified_metadata",
+              "source": "https://huggingface.co/api/models/Wan-AI/Wan2.1-T2V-1.3B",
+              "checked_on": "2026-10-09",
+              "detail": "Unauthenticated API returned commit 37ec512624d61f7aa208f7ea8140a131f93afc9a, private=false, gated=false, disabled=false. Upstream identity is separate from the actual repackaged component repository."
+            },
+            {
+              "subject": "immutable native workflow",
+              "quality": "verified_metadata",
+              "source": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI_examples/cb13911e7d83e4f61ca12e29629cab85a6c08856/wan/text_to_video_wan.json",
+              "checked_on": "2026-10-09",
+              "detail": "Official examples repository commit pins the same three loaders and 832x480/33-frame/batch-1/30-step UI workflow. Source JSON was 9029 bytes with SHA-256 436b9c074b677011b0f50a9feb8c4b4128abbbd9e4acaf34d8eeb80efbd74a64. It does not declare a minimum ComfyUI version; no generation was performed."
+            }
+          ],
+          "unresolved_assumptions": [
+            "Converted-artifact provenance, complete component license/NOTICE texts and attribution require review; the publisher Apache-2.0 declaration alone is not a complete notice inventory.",
+            "Minimum ComfyUI and dependency versions, Windows CUDA/driver support, and GPU architectures remain unverified.",
+            "Peak RAM/VRAM and installation/cache/temporary storage overhead for the selected preset have not been measured.",
+            "Published SHA-256 values have not been checked against local weight files; no binary access/transfer has been tested.",
+            "The pinned UI workflow saves animated WebP and has disabled WebM output; API conversion and a suitable video encoding path remain unvalidated."
+          ],
+          "installation_overhead_bytes": null,
+          "artifact_installation_reviewed": false,
+          "license_documents": []
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "checks": [
+            {
+              "resource": "ram",
+              "status": "unknown",
+              "reason": "Required ram capacity is unverified."
+            },
+            {
+              "resource": "storage",
+              "status": "unknown",
+              "reason": "Required storage capacity is unverified."
+            },
+            {
+              "resource": "gpu",
+              "status": "incompatible",
+              "reason": "No GPU with a declared supported vendor was detected."
+            }
+          ],
+          "notes": [
+            "Basic declared hardware check only; driver, runtime, speed, and generation success are not verified.",
+            "Converted-artifact provenance, complete component license/NOTICE texts and attribution require review; the publisher Apache-2.0 declaration alone is not a complete notice inventory.",
+            "Minimum ComfyUI and dependency versions, Windows CUDA/driver support, and GPU architectures remain unverified.",
+            "Peak RAM/VRAM and installation/cache/temporary storage overhead for the selected preset have not been measured.",
+            "Published SHA-256 values have not been checked against local weight files; no binary access/transfer has been tested.",
+            "The pinned UI workflow saves animated WebP and has disabled WebM output; API conversion and a suitable video encoding path remain unvalidated.",
+            "NVIDIA/CUDA is the selected first validation profile, not a claim that the model family cannot run on other backends.",
+            "Publisher's 8.19 GB VRAM report is for the original runner with offloading and CPU T5 encoding, not a measured ComfyUI minimum.",
+            "Total RAM/VRAM do not establish available memory, driver/kernel support, speed, or generation success."
+          ],
+          "assessment": "unsupported",
+          "profile_checks": [
+            {
+              "resource": "ram",
+              "status": "unknown",
+              "reason": "Capacity requirement evidence is unverified or estimated."
+            },
+            {
+              "resource": "storage",
+              "status": "unknown",
+              "reason": "Capacity requirement evidence is unverified or estimated."
+            },
+            {
+              "resource": "gpu",
+              "status": "unknown",
+              "reason": "Capacity requirement evidence is unverified or estimated."
+            },
+            {
+              "resource": "operating_system",
+              "status": "pass",
+              "reason": "Detected Windows; profile operating systems: ['Windows']."
+            },
+            {
+              "resource": "backend",
+              "status": "fail",
+              "reason": "Target backend: cuda; driver/kernel readiness is checked separately."
+            },
+            {
+              "resource": "gpu_architecture_and_vram",
+              "status": "fail",
+              "reason": "One GPU must satisfy both the declared architecture and reliable VRAM requirement; unknown architecture is never guessed."
+            },
+            {
+              "resource": "runtime",
+              "status": "unknown",
+              "reason": "Runtime has not been inspected; backend packages do not establish ComfyUI readiness."
+            },
+            {
+              "resource": "dependency:torch",
+              "status": "unknown",
+              "reason": "Observed version or supported constraint is unknown."
+            },
+            {
+              "resource": "dependency:nvidia-driver",
+              "status": "unknown",
+              "reason": "Observed version or supported constraint is unknown."
+            }
+          ]
+        }
+      }
+    ],
+    "hardware_warnings": ["VRAM is an estimate, not a verified measurement."]
+  },
+  "plans": {
+    "mock-cpu-video": {
+      "model_id": "mock-cpu-video",
+      "read_only": true,
+      "ready_for_installation": false,
+      "status": "blocked",
+      "components": [],
+      "known_download_bytes": 0,
+      "total_expected_download_bytes": null,
+      "total_estimated_download_bytes": null,
+      "required_storage_bytes": null,
+      "storage": {
+        "root": "D:\\DIRECTOR-Resolve\\model_weights",
+        "measured_path": "D:\\DIRECTOR-Resolve",
+        "free_bytes": 160218853376,
+        "total_bytes": 314572795904
+      },
+      "runtime_requirements": null,
+      "runtime_observation": {
+        "status": "unknown",
+        "runtime_type": "comfyui",
+        "version": null,
+        "pinned_revision": null,
+        "dependency_versions": {},
+        "custom_node_revisions": {}
+      },
+      "license_info": null,
+      "compatibility": {
+        "status": "compatible",
+        "checks": [
+          {
+            "resource": "ram",
+            "status": "compatible",
+            "reason": "32.00 GiB detected; 8 GiB required."
+          },
+          {
+            "resource": "storage",
+            "status": "compatible",
+            "reason": "149.22 GiB detected; 10 GiB required."
+          },
+          {
+            "resource": "gpu",
+            "status": "compatible",
+            "reason": "This manifest allows CPU-only operation."
+          }
+        ],
+        "notes": [
+          "Basic declared hardware check only; driver, runtime, speed, and generation success are not verified.",
+          "MOCK metadata only: requirements are fictional; this model cannot generate video."
+        ],
+        "assessment": "unknown",
+        "profile_checks": [
+          {
+            "resource": "ram",
+            "status": "unknown",
+            "reason": "Capacity requirement evidence is unverified or estimated."
+          },
+          {
+            "resource": "storage",
+            "status": "unknown",
+            "reason": "Capacity requirement evidence is unverified or estimated."
+          },
+          {
+            "resource": "gpu",
+            "status": "unknown",
+            "reason": "Capacity requirement evidence is unverified or estimated."
+          },
+          {
+            "resource": "profile",
+            "status": "unknown",
+            "reason": "No execution profile has been researched."
+          }
+        ]
+      },
+      "missing_metadata": [
+        "huggingface_repo_id",
+        "pinned_revision",
+        "installation_overhead_bytes",
+        "license_info",
+        "execution_profile"
+      ],
+      "blockers": [
+        {
+          "code": "no_installable_components",
+          "message": "Mock models have no installable model files.",
+          "component_id": null
+        },
+        {
+          "code": "missing_metadata",
+          "message": "Required installation metadata is incomplete; see missing_metadata.",
+          "component_id": null
+        },
+        {
+          "code": "unverified_prerequisites",
+          "message": "Hardware or runtime prerequisites remain unknown.",
+          "component_id": null
+        }
+      ],
+      "warnings": [
+        "Read-only plan: no files or folders are created; no installer is implemented.",
+        "VRAM is an estimate, not a verified measurement.",
+        "Generation has not been locally validated for this model/profile.",
+        "Compatibility is unknown; this is not a hardware certification.",
+        "Full storage budget is unknown; rounded estimates exclude unverified runtime/cache/temporary overhead."
+      ]
+    },
+    "mock-gpu-video": {
+      "model_id": "mock-gpu-video",
+      "read_only": true,
+      "ready_for_installation": false,
+      "status": "blocked",
+      "components": [],
+      "known_download_bytes": 0,
+      "total_expected_download_bytes": null,
+      "total_estimated_download_bytes": null,
+      "required_storage_bytes": null,
+      "storage": {
+        "root": "D:\\DIRECTOR-Resolve\\model_weights",
+        "measured_path": "D:\\DIRECTOR-Resolve",
+        "free_bytes": 160218853376,
+        "total_bytes": 314572795904
+      },
+      "runtime_requirements": null,
+      "runtime_observation": {
+        "status": "unknown",
+        "runtime_type": "comfyui",
+        "version": null,
+        "pinned_revision": null,
+        "dependency_versions": {},
+        "custom_node_revisions": {}
+      },
+      "license_info": null,
+      "compatibility": {
+        "status": "unknown",
+        "checks": [
+          {
+            "resource": "ram",
+            "status": "compatible",
+            "reason": "32.00 GiB detected; 16 GiB required."
+          },
+          {
+            "resource": "storage",
+            "status": "compatible",
+            "reason": "149.22 GiB detected; 30 GiB required."
+          },
+          {
+            "resource": "gpu",
+            "status": "unknown",
+            "reason": "GPU vendor or reliable VRAM information is incomplete."
+          }
+        ],
+        "notes": [
+          "Basic declared hardware check only; driver, runtime, speed, and generation success are not verified.",
+          "MOCK metadata only: requirements are fictional; this model cannot generate video."
+        ],
+        "assessment": "unknown",
+        "profile_checks": [
+          {
+            "resource": "ram",
+            "status": "unknown",
+            "reason": "Capacity requirement evidence is unverified or estimated."
+          },
+          {
+            "resource": "storage",
+            "status": "unknown",
+            "reason": "Capacity requirement evidence is unverified or estimated."
+          },
+          {
+            "resource": "gpu",
+            "status": "unknown",
+            "reason": "Capacity requirement evidence is unverified or estimated."
+          },
+          {
+            "resource": "profile",
+            "status": "unknown",
+            "reason": "No execution profile has been researched."
+          }
+        ]
+      },
+      "missing_metadata": [
+        "huggingface_repo_id",
+        "pinned_revision",
+        "installation_overhead_bytes",
+        "license_info",
+        "requirements.gpu_architectures",
+        "execution_profile"
+      ],
+      "blockers": [
+        {
+          "code": "no_installable_components",
+          "message": "Mock models have no installable model files.",
+          "component_id": null
+        },
+        {
+          "code": "missing_metadata",
+          "message": "Required installation metadata is incomplete; see missing_metadata.",
+          "component_id": null
+        },
+        {
+          "code": "unverified_prerequisites",
+          "message": "Hardware or runtime prerequisites remain unknown.",
+          "component_id": null
+        }
+      ],
+      "warnings": [
+        "Read-only plan: no files or folders are created; no installer is implemented.",
+        "VRAM is an estimate, not a verified measurement.",
+        "Generation has not been locally validated for this model/profile.",
+        "Compatibility is unknown; this is not a hardware certification.",
+        "Full storage budget is unknown; rounded estimates exclude unverified runtime/cache/temporary overhead."
+      ]
+    },
+    "wan-2-1-t2v-1-3b": {
+      "model_id": "wan-2-1-t2v-1-3b",
+      "read_only": true,
+      "ready_for_installation": false,
+      "status": "blocked",
+      "components": [
+        {
+          "component": {
+            "id": "diffusion",
+            "role": "diffusion_model",
+            "repository_id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+            "pinned_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+            "filename": "split_files/diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors",
+            "destination": "diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors",
+            "expected_size_bytes": 2838303560,
+            "estimated_size_bytes": null,
+            "sha256": "be531024cd9018cb5b48c40cfbb6a6191645b1c792eb8bf4f8c1c6e10f924dc5",
+            "precision": "fp16",
+            "license_info": {
+              "identifier": "Apache-2.0",
+              "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+              "usage_restrictions": [
+                "Publisher declares Apache-2.0 for this repository; this declaration does not verify complete converted-artifact provenance or notices."
+              ],
+              "acknowledgement_requirements": [
+                "Preserve applicable licenses, attribution and NOTICE text, and modification notices. Converted-artifact notice/provenance review remains unresolved."
+              ]
+            },
+            "evidence": [
+              {
+                "subject": "pinned file identity, exact byte length and SHA-256",
+                "quality": "verified_metadata",
+                "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/diffusion_models?expand=true",
+                "checked_on": "2026-10-09",
+                "detail": "Unauthenticated pinned tree API gives size and lfs.oid SHA-256, matching the published LFS pointer/commit metadata. The Xet hash is different and is not used as SHA-256. No weight body was downloaded or locally hashed."
+              },
+              {
+                "subject": "repository license declaration",
+                "quality": "verified_metadata",
+                "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+                "checked_on": "2026-10-09",
+                "detail": "Pinned publisher README declares Apache-2.0. No standalone license/NOTICE is listed at the pinned root; full conversion attribution/provenance remains unresolved."
+              },
+              {
+                "subject": "public repository access",
+                "quality": "verified_metadata",
+                "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+                "checked_on": "2026-10-09",
+                "detail": "Unauthenticated API reports private=false, gated=false, disabled=false. These are time-sensitive repository flags, not a completed binary transfer test; recheck before future installation."
+              }
+            ]
+          },
+          "destination_path": "D:\\DIRECTOR-Resolve\\model_weights\\diffusion_models\\wan2.1_t2v_1.3B_fp16.safetensors"
+        },
+        {
+          "component": {
+            "id": "text-encoder",
+            "role": "text_encoder",
+            "repository_id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+            "pinned_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+            "filename": "split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "destination": "text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "expected_size_bytes": 6735906897,
+            "estimated_size_bytes": null,
+            "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68",
+            "precision": "fp8_e4m3fn_scaled",
+            "license_info": {
+              "identifier": "Apache-2.0",
+              "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+              "usage_restrictions": [
+                "Publisher declares Apache-2.0 for this repository; this declaration does not verify complete converted-artifact provenance or notices."
+              ],
+              "acknowledgement_requirements": [
+                "Preserve applicable licenses, attribution and NOTICE text, and modification notices. Converted-artifact notice/provenance review remains unresolved."
+              ]
+            },
+            "evidence": [
+              {
+                "subject": "pinned file identity, exact byte length and SHA-256",
+                "quality": "verified_metadata",
+                "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/text_encoders?expand=true",
+                "checked_on": "2026-10-09",
+                "detail": "Unauthenticated pinned tree API gives size and lfs.oid SHA-256, matching the published LFS pointer/commit metadata. The Xet hash is different and is not used as SHA-256. No weight body was downloaded or locally hashed."
+              },
+              {
+                "subject": "repository license declaration",
+                "quality": "verified_metadata",
+                "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+                "checked_on": "2026-10-09",
+                "detail": "Pinned publisher README declares Apache-2.0. No standalone license/NOTICE is listed at the pinned root; full conversion attribution/provenance remains unresolved."
+              },
+              {
+                "subject": "public repository access",
+                "quality": "verified_metadata",
+                "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+                "checked_on": "2026-10-09",
+                "detail": "Unauthenticated API reports private=false, gated=false, disabled=false. These are time-sensitive repository flags, not a completed binary transfer test; recheck before future installation."
+              }
+            ]
+          },
+          "destination_path": "D:\\DIRECTOR-Resolve\\model_weights\\text_encoders\\umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+        },
+        {
+          "component": {
+            "id": "vae",
+            "role": "vae",
+            "repository_id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+            "pinned_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+            "filename": "split_files/vae/wan_2.1_vae.safetensors",
+            "destination": "vae/wan_2.1_vae.safetensors",
+            "expected_size_bytes": 253815318,
+            "estimated_size_bytes": null,
+            "sha256": "2fc39d31359a4b0a64f55876d8ff7fa8d780956ae2cb13463b0223e15148976b",
+            "precision": null,
+            "license_info": {
+              "identifier": "Apache-2.0",
+              "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+              "usage_restrictions": [
+                "Publisher declares Apache-2.0 for this repository; this declaration does not verify complete converted-artifact provenance or notices."
+              ],
+              "acknowledgement_requirements": [
+                "Preserve applicable licenses, attribution and NOTICE text, and modification notices. Converted-artifact notice/provenance review remains unresolved."
+              ]
+            },
+            "evidence": [
+              {
+                "subject": "pinned file identity, exact byte length and SHA-256",
+                "quality": "verified_metadata",
+                "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/vae?expand=true",
+                "checked_on": "2026-10-09",
+                "detail": "Unauthenticated pinned tree API gives size and lfs.oid SHA-256, matching the published LFS pointer/commit metadata. The Xet hash is different and is not used as SHA-256. No weight body was downloaded or locally hashed."
+              },
+              {
+                "subject": "repository license declaration",
+                "quality": "verified_metadata",
+                "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/README.md",
+                "checked_on": "2026-10-09",
+                "detail": "Pinned publisher README declares Apache-2.0. No standalone license/NOTICE is listed at the pinned root; full conversion attribution/provenance remains unresolved."
+              },
+              {
+                "subject": "public repository access",
+                "quality": "verified_metadata",
+                "source": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+                "checked_on": "2026-10-09",
+                "detail": "Unauthenticated API reports private=false, gated=false, disabled=false. These are time-sensitive repository flags, not a completed binary transfer test; recheck before future installation."
+              }
+            ]
+          },
+          "destination_path": "D:\\DIRECTOR-Resolve\\model_weights\\vae\\wan_2.1_vae.safetensors"
+        }
+      ],
+      "known_download_bytes": 9828025775,
+      "total_expected_download_bytes": 9828025775,
+      "total_estimated_download_bytes": 9828025775,
+      "required_storage_bytes": null,
+      "storage": {
+        "root": "D:\\DIRECTOR-Resolve\\model_weights",
+        "measured_path": "D:\\DIRECTOR-Resolve",
+        "free_bytes": 160218853376,
+        "total_bytes": 314572795904
+      },
+      "runtime_requirements": {
+        "operating_systems": ["Windows"],
+        "backend": "cuda",
+        "runtime_version_constraint": null,
+        "runtime_pinned_revision": null,
+        "workflow": {
+          "source": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI_examples/cb13911e7d83e4f61ca12e29629cab85a6c08856/wan/text_to_video_wan.json",
+          "pinned_revision": "cb13911e7d83e4f61ca12e29629cab85a6c08856",
+          "format": "ui",
+          "required_core_nodes": [
+            "UNETLoader",
+            "CLIPLoader",
+            "CLIPTextEncode",
+            "EmptyHunyuanLatentVideo",
+            "ModelSamplingSD3",
+            "KSampler",
+            "VAELoader",
+            "VAEDecode",
+            "SaveAnimatedWEBP",
+            "SaveWEBM"
+          ]
+        },
+        "dependencies": [
+          {
+            "name": "torch",
+            "version_constraint": null
+          },
+          {
+            "name": "nvidia-driver",
+            "version_constraint": null
+          }
+        ],
+        "custom_nodes": [],
+        "width": 832,
+        "height": 480,
+        "frames": 33,
+        "batch_size": 1,
+        "offloading": "Native ComfyUI memory management; exact settings and peak memory remain unverified."
+      },
+      "runtime_observation": {
+        "status": "unknown",
+        "runtime_type": "comfyui",
+        "version": null,
+        "pinned_revision": null,
+        "dependency_versions": {},
+        "custom_node_revisions": {}
+      },
+      "license_info": {
+        "identifier": "Apache-2.0",
+        "source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/37ec512624d61f7aa208f7ea8140a131f93afc9a/LICENSE.txt",
+        "usage_restrictions": [
+          "The publisher's model card states expectations concerning unlawful/harmful content, privacy, misinformation, and vulnerable populations; review the actual card and license."
+        ],
+        "acknowledgement_requirements": [
+          "Preserve the license and applicable attribution/NOTICE text when redistributing; mark modified files. License terms remain authoritative."
+        ]
+      },
+      "compatibility": {
+        "status": "incompatible",
+        "checks": [
+          {
+            "resource": "ram",
+            "status": "unknown",
+            "reason": "Required ram capacity is unverified."
+          },
+          {
+            "resource": "storage",
+            "status": "unknown",
+            "reason": "Required storage capacity is unverified."
+          },
+          {
+            "resource": "gpu",
+            "status": "incompatible",
+            "reason": "No GPU with a declared supported vendor was detected."
+          }
+        ],
+        "notes": [
+          "Basic declared hardware check only; driver, runtime, speed, and generation success are not verified.",
+          "Converted-artifact provenance, complete component license/NOTICE texts and attribution require review; the publisher Apache-2.0 declaration alone is not a complete notice inventory.",
+          "Minimum ComfyUI and dependency versions, Windows CUDA/driver support, and GPU architectures remain unverified.",
+          "Peak RAM/VRAM and installation/cache/temporary storage overhead for the selected preset have not been measured.",
+          "Published SHA-256 values have not been checked against local weight files; no binary access/transfer has been tested.",
+          "The pinned UI workflow saves animated WebP and has disabled WebM output; API conversion and a suitable video encoding path remain unvalidated.",
+          "NVIDIA/CUDA is the selected first validation profile, not a claim that the model family cannot run on other backends.",
+          "Publisher's 8.19 GB VRAM report is for the original runner with offloading and CPU T5 encoding, not a measured ComfyUI minimum.",
+          "Total RAM/VRAM do not establish available memory, driver/kernel support, speed, or generation success."
+        ],
+        "assessment": "unsupported",
+        "profile_checks": [
+          {
+            "resource": "ram",
+            "status": "unknown",
+            "reason": "Capacity requirement evidence is unverified or estimated."
+          },
+          {
+            "resource": "storage",
+            "status": "unknown",
+            "reason": "Capacity requirement evidence is unverified or estimated."
+          },
+          {
+            "resource": "gpu",
+            "status": "unknown",
+            "reason": "Capacity requirement evidence is unverified or estimated."
+          },
+          {
+            "resource": "operating_system",
+            "status": "pass",
+            "reason": "Detected Windows; profile operating systems: ['Windows']."
+          },
+          {
+            "resource": "backend",
+            "status": "fail",
+            "reason": "Target backend: cuda; driver/kernel readiness is checked separately."
+          },
+          {
+            "resource": "gpu_architecture_and_vram",
+            "status": "fail",
+            "reason": "One GPU must satisfy both the declared architecture and reliable VRAM requirement; unknown architecture is never guessed."
+          },
+          {
+            "resource": "runtime",
+            "status": "unknown",
+            "reason": "Runtime has not been inspected; backend packages do not establish ComfyUI readiness."
+          },
+          {
+            "resource": "dependency:torch",
+            "status": "unknown",
+            "reason": "Observed version or supported constraint is unknown."
+          },
+          {
+            "resource": "dependency:nvidia-driver",
+            "status": "unknown",
+            "reason": "Observed version or supported constraint is unknown."
+          }
+        ]
+      },
+      "missing_metadata": [
+        "installation_overhead_bytes",
+        "requirements.min_ram_gb",
+        "requirements.min_free_storage_gb",
+        "requirements.min_vram_gb",
+        "requirements.gpu_architectures",
+        "execution_profile.runtime_version_constraint",
+        "execution_profile.runtime_pinned_revision",
+        "dependencies.torch.version_constraint",
+        "dependencies.nvidia-driver.version_constraint"
+      ],
+      "blockers": [
+        {
+          "code": "missing_metadata",
+          "message": "Required installation metadata is incomplete; see missing_metadata.",
+          "component_id": null
+        },
+        {
+          "code": "unresolved_assumptions",
+          "message": "Compatibility or provenance assumptions require verification.",
+          "component_id": null
+        },
+        {
+          "code": "unsupported_profile",
+          "message": "A known requirement fails for this execution profile.",
+          "component_id": null
+        },
+        {
+          "code": "unverified_prerequisites",
+          "message": "Hardware or runtime prerequisites remain unknown.",
+          "component_id": null
+        }
+      ],
+      "warnings": [
+        "Read-only plan: no files or folders are created; no installer is implemented.",
+        "VRAM is an estimate, not a verified measurement.",
+        "Converted-artifact provenance, complete component license/NOTICE texts and attribution require review; the publisher Apache-2.0 declaration alone is not a complete notice inventory.",
+        "Minimum ComfyUI and dependency versions, Windows CUDA/driver support, and GPU architectures remain unverified.",
+        "Peak RAM/VRAM and installation/cache/temporary storage overhead for the selected preset have not been measured.",
+        "Published SHA-256 values have not been checked against local weight files; no binary access/transfer has been tested.",
+        "The pinned UI workflow saves animated WebP and has disabled WebM output; API conversion and a suitable video encoding path remain unvalidated.",
+        "Generation has not been locally validated for this model/profile.",
+        "Full storage budget is unknown; rounded estimates exclude unverified runtime/cache/temporary overhead."
+      ]
+    }
+  }
+}

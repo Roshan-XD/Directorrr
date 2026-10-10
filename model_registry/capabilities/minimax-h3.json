@@ -1,0 +1,47 @@
+{
+  "id": "minimax-h3",
+  "name": "MiniMax H3 \u00b7 Local candidate",
+  "repository": "MiniMaxAI/MiniMax-H3",
+  "license_source": "https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/42ed227ee7df40d41602854ae760620d6eb651fe/LICENSE",
+  "adapter": null,
+  "workspaces": [
+    "text-to-video",
+    "image-to-video",
+    "reference-to-video",
+    "first-last-frame"
+  ],
+  "native_audio": true,
+  "continuation": "native",
+  "fps": 24,
+  "frame_multiple": 17,
+  "frame_offset": 5,
+  "durations": [
+    {
+      "seconds": 5,
+      "frames": 124
+    }
+  ],
+  "resolutions": [
+    {
+      "id": "native-landscape",
+      "width": 1344,
+      "height": 768,
+      "aspect": "7:4"
+    }
+  ],
+  "qualities": {
+    "Native": 20,
+    "Turbo": 8
+  },
+  "default_resolution": "native-landscape",
+  "default_duration": 5,
+  "evidence": [
+    "Official MiniMaxAI repository selected for review. Diffusers Modular T2VA is published; no Director H3 execution test.",
+    "Pinned native node documents a trained length range of about 124-362 frames at 24 fps. 124 frames = 5.167 seconds; candidate only."
+  ],
+  "blockers": [
+    "Download and license acceptance not authorized.",
+    "Official INT8 offload guidance estimates about 75 GB host RAM; this laptop has about 32 GB.",
+    "Official T2VA subset is 144,039,659,327 bytes. Isolated H3 adapter, dependency lock and metadata integrity review remain unavailable."
+  ]
+}
