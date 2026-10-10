@@ -53,7 +53,10 @@ export function App({
     window.addEventListener("hashchange", change);
     return () => window.removeEventListener("hashchange", change);
   }, []);
-  if (import.meta.env.DEV && import.meta.env.VITE_PRODUCT_WORKSPACE === "1")
+  if (
+    (import.meta.env.DEV || import.meta.env.VITE_PACKAGED_DEV === "1") &&
+    import.meta.env.VITE_PRODUCT_WORKSPACE === "1"
+  )
     return <ProductWorkspace api={api} />;
   return (
     <div className="app-shell">

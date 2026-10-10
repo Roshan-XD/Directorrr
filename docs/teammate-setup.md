@@ -1,5 +1,7 @@
 # Local use and teammate setup boundary
 
+The [Windows setup preview](install-director.md) automates private acquisition in a freshly extracted folder. Its prebuilt UI/protected Python proxy removes Node/npm from receiving-PC prerequisites. It does not bundle the private runtime, reuse acceptance, change production gates or certify a fresh PC before testing. The existing development launcher retains Vite unless explicit setup state selects packaged mode.
+
 **A. Working local Windows application:** the private `runtime/windows-dev-001` and Start/Stop launchers have a proven Windows-only generation → conversion → Resolve import → explicitly approved timeline flow. No WSL runtime is needed. Production provisioning remains disabled.
 
 **B. Reproducible teammate setup is the next task:** test a reviewed setup guide on a second compatible Windows/NVIDIA machine. Preserve the pinned dependency lock, Python/source identity, model hashes, licenses and isolated final-path environments. The current launcher still needs the project backend `.venv`, frontend `node_modules`, existing compatible Node.js and Resolve with scripting access. The backend environment currently depends on shared Python 3.11. A teammate needs separately acquired applicable runtime/model artifacts, accepted applicable terms, adequate RAM/VRAM/storage and a suitable Windows NVIDIA driver. Neither drivers nor Resolve should be bundled by Director. Hardware similarity alone is not proof of inference compatibility.

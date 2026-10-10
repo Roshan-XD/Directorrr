@@ -1,7 +1,7 @@
 @echo off
 cd /d "%~dp0"
 if not exist ".venv\Scripts\pythonw.exe" (
-  echo Director backend environment is missing. Read docs/windows-native-runtime.md.
+  echo Director setup is missing. Open Setup Director.exe from the release ZIP first.
   pause
   exit /b 1
 )

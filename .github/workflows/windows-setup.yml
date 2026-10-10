@@ -1,0 +1,39 @@
+name: Build Windows setup
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.20.0'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install UI build dependencies
+        run: npm.cmd ci
+        working-directory: frontend
+      - name: Check frontend
+        run: npm.cmd test
+        working-directory: frontend
+      - name: Build packaged private-development UI
+        run: npm.cmd run build
+        working-directory: frontend
+        env:
+          VITE_PACKAGED_DEV: '1'
+          VITE_PRODUCT_WORKSPACE: '1'
+          VITE_LAUNCHER_SESSION: '1'
+      - name: Build setup archive
+        run: python scripts/build_setup.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Director-Windows-Setup
+          path: |
+            releases/Director-Windows-Setup.zip
+            releases/SHA256SUMS.txt

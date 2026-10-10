@@ -67,3 +67,8 @@ docs/h3-current-hardware.json
 docs/*.png
 docs/*.jpg
 docs/*.jpeg
+
+# Private setup state and generated release archives
+setup/state/
+releases/
+Setup Director.exe

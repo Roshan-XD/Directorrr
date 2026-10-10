@@ -539,3 +539,12 @@ Live browser checks inspected the actual local page at desktop size and 768×900
 
 Sanitized live receipt: `docs/product-live-check.json`; actual screenshot: `docs/product-workspace.png`; all 30 requested completion points: `docs/product-v1.1-completion.md`. This verification made **zero real generation submissions, Resolve mutations, model transfers or model removals**. New experimental Wan geometry/quality combinations, H3 generation/audio/conditioned continuation and output playback for a new V1.1 job were not execution validated. The previous native end-to-end proof is preserved as the baseline; mocked Resolve/conversion regressions passed. Verification-owned services are stopped after the checks.
 
+
+
+## Windows setup preview verification
+
+Private setup adds a compiled WinForms bootstrap, explicit fresh terms/download consent, independently hashed CP311 backend and CP313 CUDA wheel sets, frozen ComfyUI source verification, and a prebuilt UI with session-only local authentication. No private runtime/model binaries are bundled.
+
+Backend: 572 tests passed, 4 privilege-related skips, 1 existing third-party warning; the final focused setup suite passed 26 tests. Frontend: 106 tests passed; TypeScript/production build and formatting passed. Packaged launcher rehearsal on the existing validated Windows runtime: UI/backend/ComfyUI health passed; trusted privileged proxy request succeeded, missing/wrong key and untrusted Origin returned 403. Stop cleared the session and stopped owned services. No generation, model downloads or Resolve edits were performed.
+
+Fresh-PC setup remains untested. Python 3.13 was retained for PyTorch; the backend uses a separately isolated full Python 3.11.9 distribution because Resolve scripting compatibility was not established under Python 3.13. Production provisioning/redistribution gates remain disabled.

@@ -59,14 +59,20 @@ class Session:
             time.sleep(0.5)
         raise RuntimeError(label + " startup timed out; see runtime receipts/logs")
 
-    def start(self):
+    def start(self, packaged=False):
         for path in (NATIVE, ROOT / ".venv", ROOT / "frontend"):
             check_path(path)
-        receipt = json.loads((NATIVE / "receipts/native-inference.json").read_text())
-        if receipt["state"] != "PASS":
-            raise RuntimeError("Windows native inference validation is required")
+        configured = (ROOT / "setup/state/installed.json").is_file()
+        packaged = packaged or configured
+        if configured:
+            from teammate_setup import validate_installed
+            validate_installed()
+        else:
+            receipt = json.loads((NATIVE / "receipts/native-inference.json").read_text())
+            if receipt["state"] != "PASS":
+                raise RuntimeError("Windows native inference validation is required")
         node = shutil.which("node.exe")
-        if not node:
+        if not node and not packaged:
             raise RuntimeError("Existing Node.js is required; launcher installs nothing")
         for port in (8188, 8000, 5173):
             with socket.socket() as s:
@@ -86,6 +92,8 @@ class Session:
             NATIVE / "ComfyUI", env, "comfy")
         self.wait("http://127.0.0.1:8188/system_stats", comfy, "Windows ComfyUI")
         backend_env = env.copy()
+        if packaged:
+            backend_env["PYTHONPATH"] = str(ROOT / "backend")
         backend_env.update(DIRECTOR_MANAGER_TOKEN=self.key, DIRECTOR_ENABLE_DEV_GENERATION="1",
                            DIRECTOR_ENABLE_DEV_RESOLVE="1", DIRECTOR_DEV_WINDOWS_RUNTIME="1",
                            DIRECTOR_DEV_COMFY_URL="http://127.0.0.1:8188",
@@ -98,9 +106,14 @@ class Session:
         # Server-only variable: never VITE_, a URL, file or subprocess argument.
         ui_env.update(VITE_PRODUCT_WORKSPACE="1", VITE_DEV_GENERATION="1", VITE_LAUNCHER_SESSION="1", DIRECTOR_BACKEND_URL="http://127.0.0.1:8000",
                       DIRECTOR_LAUNCHER_TOKEN=self.key)
-        ui = self.spawn([node, str(ROOT / "frontend/node_modules/vite/bin/vite.js"),
-                         "--host", "127.0.0.1", "--port", "5173", "--strictPort"],
-                        ROOT / "frontend", ui_env, "Director UI")
+        if packaged:
+            ui_env["DIRECTOR_PACKAGED_SESSION"] = "1"
+            ui = self.spawn([str(ROOT / ".venv/Scripts/python.exe"), str(ROOT / "scripts/packaged_ui.py")],
+                            ROOT, ui_env, "Director UI")
+        else:
+            ui = self.spawn([node, str(ROOT / "frontend/node_modules/vite/bin/vite.js"),
+                             "--host", "127.0.0.1", "--port", "5173", "--strictPort"],
+                            ROOT / "frontend", ui_env, "Director UI")
         self.wait("http://127.0.0.1:5173", ui, "Director UI")
         # This record contains process ownership information, never the manager key.
         (NATIVE / "receipts/launcher-session.json").write_text(json.dumps({

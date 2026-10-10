@@ -360,7 +360,8 @@ export class DirectorApi {
     base = "/api",
     private timeoutMs = 45000,
     private fetcher: typeof fetch = (...args) => fetch(...args),
-    private launcherDiscovery = import.meta.env.DEV &&
+    private launcherDiscovery = (import.meta.env.DEV ||
+      import.meta.env.VITE_PACKAGED_DEV === "1") &&
       import.meta.env.VITE_LAUNCHER_SESSION === "1",
   ) {
     const url = new URL(

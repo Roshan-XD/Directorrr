@@ -1,0 +1,9 @@
+* text=auto
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.cmd text eol=crlf
+# These exact bytes are checksum inputs. Never normalize them on checkout.
+runtime_profiles/** -text
+model_registry/** -text
+setup/** -text
